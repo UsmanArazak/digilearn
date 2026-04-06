@@ -12,9 +12,12 @@ interface SkillTrackCardProps {
 
 export default function SkillTrackCard({ title, description, icon, href = '#' }: SkillTrackCardProps) {
   return (
-    <Link href={href} className="block w-full bg-white rounded-2xl shadow-sm p-5 border border-gray-50 mb-4 active:scale-[0.98] transition-transform">
+    <Link
+      href={href}
+      className="block w-full bg-white rounded-2xl shadow-sm p-5 border border-accent/40 border-l-4 mb-4 active:scale-[0.98] transition-transform hover:shadow-md hover:border-accent/70"
+    >
       <div className="flex items-start gap-4">
-        <div className="bg-light-bg text-gray-700 p-3 rounded-xl flex-shrink-0">
+        <div className="bg-accent/20 text-gray-900 p-3 rounded-xl flex-shrink-0 border border-accent/40">
           {icon}
         </div>
         <div className="flex-1">

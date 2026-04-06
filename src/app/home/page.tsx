@@ -43,13 +43,10 @@ export default function Home() {
             <p className="text-base text-gray-600 mb-6 font-medium leading-relaxed">
               {t('hero.subtitle')}
             </p>
-            <button className="w-full bg-accent text-gray-900 font-bold py-4 rounded-xl shadow-sm text-lg active:scale-[0.98] transition-transform">
-              {t('hero.cta')}
-            </button>
           </section>
 
           {/* Skill Tracks Section */}
-          <section>
+          <section className="space-y-4">
             <SkillTrackCard 
               title={t('skill_tracks.stay_safe_online.title')}
               description={t('skill_tracks.stay_safe_online.description')}

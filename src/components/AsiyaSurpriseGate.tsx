@@ -33,7 +33,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
 
   const [phase, setPhase] = useState<Phase>('checking');
   const [name, setName] = useState('');
-  const [typedNameForUi, setTypedNameForUi] = useState<string>('');
   const [fallbackVisible, setFallbackVisible] = useState(false);
   const [confettiSeed, setConfettiSeed] = useState(0);
 
@@ -61,8 +60,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const normalized = normalizeName(name);
-    const pretty = name.trim();
-    setTypedNameForUi(pretty);
 
     if (validNormalized.includes(normalized)) {
       setFallbackVisible(false);
@@ -94,7 +91,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
   if (phase === 'normal') {
     return <>{children}</>;
   }
-  const revealMessage = t('surprise.reveal.title');
   const revealSubtitle = t('surprise.reveal.subtitle');
 
   return (
@@ -124,12 +120,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
                 className="w-full bg-light-bg p-4 rounded-2xl shadow-sm border border-gray-100 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all placeholder:text-gray-400 font-medium"
                 autoComplete="off"
               />
-
-              {typedNameForUi && (
-                <p className="text-sm text-gray-600 font-semibold">
-                  {t('surprise.prompt.greeting', { name: typedNameForUi })}
-                </p>
-              )}
 
               {fallbackVisible && (
                 <p className="text-sm text-gray-800 font-extrabold">
@@ -161,7 +151,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
               <p className="text-sm uppercase tracking-widest font-extrabold text-gray-400 mb-1">
                 {t('surprise.reveal.kicker')}
               </p>
-              <h2 className="text-2xl font-extrabold text-gray-900 mb-2 leading-tight">{revealMessage}</h2>
               <p className="text-sm text-gray-600 font-semibold leading-relaxed">{revealSubtitle}</p>
               <button
                 type="button"

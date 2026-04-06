@@ -109,14 +109,14 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Stats row or CTA */}
+      {/* CTA Section */}
       <div className="mt-auto px-2 pb-6">
-        <Link href="/home" className="w-full bg-accent text-gray-900 font-black py-6 rounded-[2.5rem] text-center text-lg active:scale-95 transition-all shadow-xl shadow-accent/10 block mb-4">
+        <Link href="/register" className="w-full bg-accent text-gray-900 font-black py-6 rounded-[2.5rem] text-center text-lg active:scale-95 transition-all shadow-xl shadow-accent/10 block mb-4">
           {t('landing.cta')}
         </Link>
-        <p className="text-center text-gray-400 font-bold text-sm">
+        <Link href="/login" className="text-center text-gray-400 font-bold text-sm block">
            {t('landing.sign_in')}
-        </p>
+        </Link>
       </div>
 
       {/* Floating Bottom Navigation (Aesthetic only like reference) */}

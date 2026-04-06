@@ -43,5 +43,17 @@
       "lessons": "Darussa 20+",
       "languages": "Harsuna 2"
     }
+  },
+  "auth": {
+    "create_account": "Bude Asusu",
+    "sign_in": "Shiga Ciki",
+    "full_name": "Cikakken Suna",
+    "phone_number": "Lambar Waya",
+    "select_language": "Zaɓi Harshe",
+    "errors": {
+      "fill_all": "Da fatan za a cika dukkan bayanan",
+      "no_account": "Ba mu sami asusu da wannan lambar ba. Da fatan za a yi rajista tukuna.",
+      "welcome_back": "Barka da dawowa!"
+    }
   }
 }

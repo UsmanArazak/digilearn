@@ -41,7 +41,7 @@ export default function LandingPage() {
              <div className="relative z-10 flex flex-col h-full">
                <div className="flex justify-between items-start">
                   <h2 className="text-2xl font-black leading-tight max-w-[160px] text-gray-900">
-                     {t('skill_tracks.stay_safe_online.title')}
+                     {t('skill_tracks.phone_basics.title')}
                   </h2>
                </div>
              </div>

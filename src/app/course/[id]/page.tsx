@@ -2,25 +2,40 @@
 
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ArrowLeft, Clock3, BookOpen } from 'lucide-react';
+import { ArrowLeft, Clock3, BookOpen, CheckCircle2, ChevronRight } from 'lucide-react';
 import Header from '@/components/Header';
 import BottomNav from '@/components/BottomNav';
 import { AuthGuard } from '@/components/AuthGuard';
+import { COURSE_IDS, LESSONS_BY_COURSE, PROGRESS_STORAGE_KEY, type CourseId, type ProgressMap } from '@/data/lessons';
 
-type CourseId = 'stay_safe_online' | 'internet_101';
-
-const VALID_COURSE_IDS: CourseId[] = ['stay_safe_online', 'internet_101'];
+const isCourseId = (id: string): id is CourseId => COURSE_IDS.includes(id as CourseId);
 
 export default function CourseDetailsPage({ params }: { params: { id: string } }) {
   const { t } = useTranslation('common');
-  const courseId = params.id as CourseId;
+  const courseId = params.id;
+  const [completedLessons, setCompletedLessons] = useState<number[]>([]);
 
-  if (!VALID_COURSE_IDS.includes(courseId)) {
+  if (!isCourseId(courseId)) {
     notFound();
   }
 
-  const lessons = t(`course_content.${courseId}.lessons`, { returnObjects: true }) as string[];
+  const lessons = LESSONS_BY_COURSE[courseId];
+
+  useEffect(() => {
+    const raw = localStorage.getItem(PROGRESS_STORAGE_KEY);
+    if (!raw) {
+      setCompletedLessons([]);
+      return;
+    }
+    try {
+      const progress = JSON.parse(raw) as ProgressMap;
+      setCompletedLessons(progress[courseId] ?? []);
+    } catch {
+      setCompletedLessons([]);
+    }
+  }, [courseId]);
 
   return (
     <AuthGuard>
@@ -48,22 +63,31 @@ export default function CourseDetailsPage({ params }: { params: { id: string } }
               </span>
               <span className="inline-flex items-center gap-2 bg-white border border-gray-100 rounded-xl px-3 py-2 text-sm font-semibold text-gray-700">
                 <Clock3 size={16} />
-                {t('course.duration', { count: lessons.length * 8 })}
+                {t('course.duration', { count: lessons.reduce((sum, lesson) => sum + lesson.readTimeMin, 0) })}
               </span>
             </div>
           </section>
 
           <section className="space-y-3">
             {lessons.map((lesson, index) => (
-              <article
+              <Link
                 key={`${courseId}-${index}`}
-                className="bg-white rounded-2xl border border-gray-50 shadow-sm p-4"
+                href={`/course/${courseId}/lesson/${index}`}
+                className="block bg-white rounded-2xl border border-gray-50 shadow-sm p-4"
               >
-                <p className="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">
-                  {t('course.lesson_number', { count: index + 1 })}
-                </p>
-                <h2 className="text-base font-bold text-gray-900">{lesson}</h2>
-              </article>
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">
+                      {t('course.lesson_number', { count: index + 1 })}
+                    </p>
+                    <h2 className="text-base font-bold text-gray-900">{t(lesson.titleKey)}</h2>
+                  </div>
+                  <div className="flex items-center gap-2 pt-1">
+                    {completedLessons.includes(index) && <CheckCircle2 size={18} className="text-green-600" />}
+                    <ChevronRight size={16} className="text-gray-400" />
+                  </div>
+                </div>
+              </Link>
             ))}
           </section>
         </main>

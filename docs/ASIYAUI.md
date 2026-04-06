@@ -37,6 +37,10 @@ Defined in `tailwind.config.ts`:
   - Course cards use accent-tinted separators and icon containers
 - Auth (`src/app/login/page.tsx`, `src/app/register/page.tsx`):
   - Minimal forms, rounded controls, high legibility, accent CTA
+- Lesson Player (`src/app/course/[id]/lesson/[lessonIndex]/page.tsx`):
+  - Full-screen guided reading flow with top progress bar
+  - Large centered icon + bold heading + simple explanatory paragraph per step
+  - Bottom paired actions: muted Back + accent Next/Complete
 
 ## Motion
 - Keep animations subtle and purposeful

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '@/components/Header';
 import BottomNav from '@/components/BottomNav';
 import SkillTrackCard from '@/components/SkillTrackCard';
-import { ShieldCheck, Globe } from 'lucide-react';
+import { Smartphone, Globe, Mail, ShieldCheck } from 'lucide-react';
 import { AuthGuard } from '@/components/AuthGuard';
 import { useAuth } from '@/hooks/useAuth';
 
@@ -48,16 +48,28 @@ export default function Home() {
           {/* Skill Tracks Section */}
           <section className="space-y-4">
             <SkillTrackCard 
-              title={t('skill_tracks.stay_safe_online.title')}
-              description={t('skill_tracks.stay_safe_online.description')}
-              icon={<ShieldCheck size={24} />}
-              href="/course/stay_safe_online"
+              title={t('skill_tracks.phone_basics.title')}
+              description={t('skill_tracks.phone_basics.description')}
+              icon={<Smartphone size={24} />}
+              href="/course/phone_basics"
             />
             <SkillTrackCard 
               title={t('skill_tracks.internet_101.title')} 
               description={t('skill_tracks.internet_101.description')} 
               icon={<Globe size={24} />}
               href="/course/internet_101"
+            />
+            <SkillTrackCard 
+              title={t('skill_tracks.email_messaging.title')}
+              description={t('skill_tracks.email_messaging.description')}
+              icon={<Mail size={24} />}
+              href="/course/email_messaging"
+            />
+            <SkillTrackCard
+              title={t('skill_tracks.online_safety.title')}
+              description={t('skill_tracks.online_safety.description')}
+              icon={<ShieldCheck size={24} />}
+              href="/course/online_safety"
             />
           </section>
         </main>

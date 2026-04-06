@@ -27,9 +27,9 @@
     }
   },
   "skill_tracks": {
-    "stay_safe_online": {
-      "title": "Yadda za ka kare kanka",
-      "description": "Koyi yadda zaka kare bayanan ka daga masu damfara a yanar gizo."
+    "phone_basics": {
+      "title": "Asalin Amfani da Waya",
+      "description": "Koyi muhimman abubuwan waya da yadda za ka yi amfani da ita cikin sauki."
     },
     "internet_101": {
       "title": "Ilimin Intanet",
@@ -77,8 +77,18 @@
     "duration": "~Minti {{count}}",
     "lesson_number": "Darasi na {{count}}"
   },
+  "lesson_player": {
+    "step_of": "Mataki {{step}} cikin {{total}}",
+    "read_time": "~Karatun minti {{count}}",
+    "back": "Baya",
+    "next": "Na gaba",
+    "complete_lesson": "Kammala Darasi",
+    "lesson_complete": "An Kammala Darasi",
+    "continue": "Ci gaba",
+    "next_lesson": "Darasi na gaba"
+  },
   "course_content": {
-    "stay_safe_online": {
+    "online_safety": {
       "lessons": [
         "Ka kirkiri kalmar sirri mai karfi kuma ka boye ta",
         "Ka gane damfara da sakonnin karya a yanar gizo",
@@ -93,6 +103,176 @@
         "Budewa shafukan yanar gizo cikin aminci da kaucewa mugun link",
         "Yadda zaka sarrafa data domin yin amfani da intanet cikin sauki"
       ]
+    }
+  },
+  "lesson_content": {
+    "phone_basics": {
+      "lesson1": {
+        "title": "Sanin wayarka",
+        "steps": {
+          "step1": { "heading": "Fahimci home screen", "content": "Home screen shi ne babban shafin wayarka. Daga nan zaka bude apps." },
+          "step2": { "heading": "Amfani da taba allo", "content": "Danna sau daya don budewa, rike don karin zabuka, sannan ja allo domin matsawa." },
+          "step3": { "heading": "Gyara saituna na asali", "content": "A settings zaka iya gyara haske, sauti, da harshe domin amfani ya fi sauki." }
+        }
+      },
+      "lesson2": {
+        "title": "Yin kira da amsa kira",
+        "steps": {
+          "step1": { "heading": "Bude manhajar kira", "content": "Danna alamar waya, saka lamba, sannan danna kira." },
+          "step2": { "heading": "Amsa da katse kira", "content": "Idan aka kira ka, amsa. Idan ka gama, danna jan maballi domin katsewa." },
+          "step3": { "heading": "Ajiye lambobin waya", "content": "Ajiye lambobin dangi da abokai domin kiran su cikin gaggawa." }
+        }
+      },
+      "lesson3": {
+        "title": "Aika sakonnin rubutu",
+        "steps": {
+          "step1": { "heading": "Bude manhajar sako", "content": "Bude messages ka zabi mutum ko ka saka sabon lamba." },
+          "step2": { "heading": "Rubuta a takaice", "content": "Ka rubuta sako mai sauki da gajarta, sannan ka tura." },
+          "step3": { "heading": "Duba amsoshi", "content": "Ka sake bude hira domin ganin amsa da ci gaba da tattaunawa." }
+        }
+      },
+      "lesson4": {
+        "title": "Sanya da kula da apps",
+        "steps": {
+          "step1": { "heading": "Yi amfani da app store", "content": "Bude Play Store, ka nema app, sannan ka tabbatar da sunan mai kirkira kafin saukewa." },
+          "step2": { "heading": "Tsara apps dinsa", "content": "Bayan saukewa, matsa app zuwa wurin da zaka rika ganinsa cikin sauki." },
+          "step3": { "heading": "Goge wanda ba ka amfani", "content": "Cire tsofaffin apps da ba ka amfani da su domin wayar ta yi sauri." }
+        }
+      },
+      "lesson5": {
+        "title": "Kula da batir da ajiya",
+        "steps": {
+          "step1": { "heading": "Ajiye batir", "content": "Rage haske, kashe data idan ba ka amfani, ka kuma rufe apps da ke gudana a baya." },
+          "step2": { "heading": "Samu karin sarari", "content": "Goge hotuna da fayilolin da ba ka bukata domin samun ajiya." },
+          "step3": { "heading": "Duba lafiyar waya", "content": "Ka duba battery da storage lokaci-lokaci domin wayar ta ci gaba da aiki lafiya." }
+        }
+      }
+    },
+    "internet_101": {
+      "lesson1": {
+        "title": "Menene intanet",
+        "steps": {
+          "step1": { "heading": "Intanet haɗi ce", "content": "Intanet na hada wayoyi da kwamfutoci domin musayar bayanai." },
+          "step2": { "heading": "Apps na amfani da intanet", "content": "Lokacin da ka bude YouTube ko WhatsApp, wayarka na amfani da intanet." },
+          "step3": { "heading": "Data tana da iyaka", "content": "Yi amfani da data cikin hikima domin kada ta kare da wuri." }
+        }
+      },
+      "lesson2": {
+        "title": "Hada WiFi da mobile data",
+        "steps": {
+          "step1": { "heading": "Haɗa WiFi", "content": "Bude settings, ka zabi WiFi, sannan ka saka kalmar sirri." },
+          "step2": { "heading": "Amfani da mobile data", "content": "Kunna mobile data idan babu WiFi, ka kuma kula da yawan data." },
+          "step3": { "heading": "Guji haɗin da ba a sani ba", "content": "Kada ka saka bayanai masu muhimmanci a WiFi da ba ka yarda da shi ba." }
+        }
+      },
+      "lesson3": {
+        "title": "Amfani da web browser",
+        "steps": {
+          "step1": { "heading": "Bude browser", "content": "Yi amfani da Chrome ko wani browser domin shiga shafukan yanar gizo." },
+          "step2": { "heading": "Rubuta adireshi daidai", "content": "Ka rubuta sunan shafi da kyau domin kauce wa shafin karya." },
+          "step3": { "heading": "Tabs da back button", "content": "Tabs na taimakawa bude shafuka da yawa, back button na komawa baya." }
+        }
+      },
+      "lesson4": {
+        "title": "Yadda ake bincike lafiya",
+        "steps": {
+          "step1": { "heading": "Yi amfani da kalmomi masu sauki", "content": "Ka rubuta tambaya a sarari domin samun sakamako mai kyau." },
+          "step2": { "heading": "Bude shafukan da aka sani", "content": "Ka fi amincewa da shafukan da ka sani kuma ka guji links masu shakku." },
+          "step3": { "heading": "Tabbatar da bayani", "content": "Kwatanta bayanai daga shafuka fiye da daya kafin ka yarda da su." }
+        }
+      },
+      "lesson5": {
+        "title": "Gane shafukan da za a yarda da su",
+        "steps": {
+          "step1": { "heading": "Duba HTTPS", "content": "Shafi mai aminci yawanci yana farawa da https kuma yana da alamar kulle." },
+          "step2": { "heading": "Karanta adireshin shafi sosai", "content": "Masu damfara kan yi amfani da suna mai kama da na gaske." },
+          "step3": { "heading": "Kare bayananka", "content": "Kada ka saka kalmar sirri ko bayanin banki sai ka tabbatar shafin na gaske ne." }
+        }
+      }
+    },
+    "email_messaging": {
+      "lesson1": {
+        "title": "Menene email",
+        "steps": {
+          "step1": { "heading": "Email kamar wasika ce ta yanar gizo", "content": "Email na ba ka damar aika sakonni da fayiloli ta intanet." },
+          "step2": { "heading": "Kowane email yana da adireshi", "content": "Adireshi irin su name@gmail.com na taimakawa mutane su aiko maka sako." },
+          "step3": { "heading": "Email yana da amfani ga aiki da karatu", "content": "Za ka iya amfani da email wajen cike fom, neman aiki, da karatu." }
+        }
+      },
+      "lesson2": {
+        "title": "Kirkirar asusun Gmail",
+        "steps": {
+          "step1": { "heading": "Bude shafin signup", "content": "Je zuwa Gmail ka fara kirkirar asusu da bayananka." },
+          "step2": { "heading": "Yi kalmar sirri mai karfi", "content": "Haɗa haruffa, lambobi, da alamu domin kariya." },
+          "step3": { "heading": "Saka hanyar dawo da asusu", "content": "Saka lambar waya domin dawo da asusun idan ka manta kalmar sirri." }
+        }
+      },
+      "lesson3": {
+        "title": "Aika da karbar emails",
+        "steps": {
+          "step1": { "heading": "Rubuta sabon email", "content": "Danna compose, saka adireshin mai karba, ka rubuta take da sako." },
+          "step2": { "heading": "Duba inbox", "content": "Ka rika bude inbox domin ganin sabbin sakonni." },
+          "step3": { "heading": "Amsa cikin ladabi", "content": "Amsa sakonni a takaice kuma cikin mutunci." }
+        }
+      },
+      "lesson4": {
+        "title": "Amfani da WhatsApp",
+        "steps": {
+          "step1": { "heading": "Kafa profile", "content": "Saka suna da hoto mai sauki domin mutane su gane ka." },
+          "step2": { "heading": "Aika rubutu da voice note", "content": "Yi rubutu ko sakon murya gwargwadon bukata." },
+          "step3": { "heading": "Sarrafawa a group", "content": "Mute groups masu hayaniya kuma ka guji tura labarin da ba a tantance ba." }
+        }
+      },
+      "lesson5": {
+        "title": "Tsaro yayin aika sako",
+        "steps": {
+          "step1": { "heading": "Kare sirri", "content": "Kada ka aika bayanan sirri ko hotuna ga wanda ba ka sani ba." },
+          "step2": { "heading": "Gane links na damfara", "content": "Guji links da ke alkawarin kudi ko kyauta cikin gaggawa." },
+          "step3": { "heading": "Block da report", "content": "Idan an dame ka ko an yi damfara, ka block sannan ka report." }
+        }
+      }
+    },
+    "online_safety": {
+      "lesson1": {
+        "title": "Kare bayanan sirri",
+        "steps": {
+          "step1": { "heading": "San abin da ya kamata ya zama sirri", "content": "Lambar waya, katin banki, da bayanan shaida su zama sirri." },
+          "step2": { "heading": "Rage yawan bayanin da kake rabawa", "content": "Ka raba bayanin da ya zama dole kawai a yanar gizo." },
+          "step3": { "heading": "Yi amfani da privacy settings", "content": "Kayyade wanda zai ga posts da bayananka." }
+        }
+      },
+      "lesson2": {
+        "title": "Gane damfara da sakonnin karya",
+        "steps": {
+          "step1": { "heading": "Ka lura da matsin lamba", "content": "Masu damfara na son ka yi gaggawa. Tsaya ka tantance." },
+          "step2": { "heading": "Duba mai aikowa", "content": "Ka duba lamba ko adireshin email kafin ka yarda." },
+          "step3": { "heading": "Kada ka bada OTP", "content": "Lambar OTP sirri ce. Babu hukuma ta gaske da za ta tambaye ka ita." }
+        }
+      },
+      "lesson3": {
+        "title": "Kirkirar kalmar sirri mai karfi",
+        "steps": {
+          "step1": { "heading": "Yi doguwar kalmar sirri", "content": "Ka yi kalmar sirri mai haruffa da lambobi akalla 10." },
+          "step2": { "heading": "Ka bambanta kalmomin sirri", "content": "Kada ka yi kalmar sirri daya ga dukkan apps." },
+          "step3": { "heading": "Ajiye su cikin aminci", "content": "Yi amfani da password manager ko rubutu mai sirri da aka kiyaye." }
+        }
+      },
+      "lesson4": {
+        "title": "Amfani da social media cikin aminci",
+        "steps": {
+          "step1": { "heading": "Ka yi tunani kafin ka wallafa", "content": "Ka tambayi kanka ko post din zai kawo matsala kafin ka tura." },
+          "step2": { "heading": "Sarrafi wanda zai iya tuntubarka", "content": "Yi amfani da privacy controls domin rage sakonnin da ba a so." },
+          "step3": { "heading": "Guji hatsarin online trends", "content": "Kada ka bi kalubale masu hatsari saboda kawai wasu na yi." }
+        }
+      },
+      "lesson5": {
+        "title": "Me za ka yi idan matsala ta faru",
+        "steps": {
+          "step1": { "heading": "Yi gaggawar gyara", "content": "Canza kalmar sirri nan da nan idan ka ga an shiga asusunka ba tare da izini ba." },
+          "step2": { "heading": "Nemi taimako daga wanda ka yarda", "content": "Tuntuɓi dangi, aboki, ko support na hukuma." },
+          "step3": { "heading": "Yi report sannan ka dawo da asusu", "content": "Yi report a app kuma ka bi matakan dawo da asusu cikin tsaro." }
+        }
+      }
     }
   },
   "surprise": {

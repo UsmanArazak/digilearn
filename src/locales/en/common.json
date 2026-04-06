@@ -27,9 +27,9 @@
     }
   },
   "skill_tracks": {
-    "stay_safe_online": {
-      "title": "How to stay safe online",
-      "description": "Learn to protect your personal information and recognize scams."
+    "phone_basics": {
+      "title": "Phone Basics",
+      "description": "Learn the basic parts of your phone and how to use them confidently."
     },
     "internet_101": {
       "title": "Internet 101",
@@ -77,8 +77,18 @@
     "duration": "~{{count}} min",
     "lesson_number": "Lesson {{count}}"
   },
+  "lesson_player": {
+    "step_of": "Step {{step}} of {{total}}",
+    "read_time": "~{{count}} min read",
+    "back": "Back",
+    "next": "Next",
+    "complete_lesson": "Complete Lesson",
+    "lesson_complete": "Lesson Complete",
+    "continue": "Continue",
+    "next_lesson": "Next Lesson"
+  },
   "course_content": {
-    "stay_safe_online": {
+    "online_safety": {
       "lessons": [
         "Create strong passwords and keep them private",
         "Spot online scams and fake offers",
@@ -93,6 +103,176 @@
         "Open websites safely and avoid harmful links",
         "Manage mobile data and browse efficiently"
       ]
+    }
+  },
+  "lesson_content": {
+    "phone_basics": {
+      "lesson1": {
+        "title": "Getting to know your phone",
+        "steps": {
+          "step1": { "heading": "Meet your home screen", "content": "Your home screen is the main place on your phone. You can open apps from here." },
+          "step2": { "heading": "Use touch actions", "content": "Tap to open, hold to see options, and swipe to move between screens." },
+          "step3": { "heading": "Adjust basic settings", "content": "Open settings to change brightness, sound, and language so your phone feels easier to use." }
+        }
+      },
+      "lesson2": {
+        "title": "Making and receiving calls",
+        "steps": {
+          "step1": { "heading": "Open the phone app", "content": "Tap the phone icon, type a number, and press call to start speaking." },
+          "step2": { "heading": "Answer and end calls", "content": "When someone calls, swipe or tap answer. Tap the red button to end the call." },
+          "step3": { "heading": "Use your contacts", "content": "Save names with numbers so you can call family and friends faster next time." }
+        }
+      },
+      "lesson3": {
+        "title": "Sending text messages",
+        "steps": {
+          "step1": { "heading": "Open your messages app", "content": "Tap messages, then choose a contact or type a number for a new message." },
+          "step2": { "heading": "Write and send clearly", "content": "Keep your message short and clear. Tap send when you are ready." },
+          "step3": { "heading": "Check message replies", "content": "Open the same conversation to read new replies and continue chatting." }
+        }
+      },
+      "lesson4": {
+        "title": "Installing and managing apps",
+        "steps": {
+          "step1": { "heading": "Use the app store", "content": "Open Play Store, search for the app name, and check the app publisher before installing." },
+          "step2": { "heading": "Open and organize apps", "content": "After install, open the app from your home screen and move it to a place you can find quickly." },
+          "step3": { "heading": "Remove apps you do not use", "content": "Uninstall old apps to free space and keep your phone fast." }
+        }
+      },
+      "lesson5": {
+        "title": "Managing your battery and storage",
+        "steps": {
+          "step1": { "heading": "Save battery power", "content": "Reduce brightness, turn off data when not needed, and close apps running in the background." },
+          "step2": { "heading": "Free up storage", "content": "Delete duplicate photos, old downloads, and videos you no longer need." },
+          "step3": { "heading": "Check phone health", "content": "Open battery and storage settings often so your phone stays smooth and reliable." }
+        }
+      }
+    },
+    "internet_101": {
+      "lesson1": {
+        "title": "What is the internet",
+        "steps": {
+          "step1": { "heading": "Internet means connection", "content": "The internet connects phones and computers so people can share information." },
+          "step2": { "heading": "Websites and apps use internet", "content": "When you open YouTube, Google, or WhatsApp, your phone uses internet data." },
+          "step3": { "heading": "Data is limited", "content": "Use data wisely by avoiding unnecessary videos and downloads." }
+        }
+      },
+      "lesson2": {
+        "title": "Connecting to WiFi and mobile data",
+        "steps": {
+          "step1": { "heading": "Connect to WiFi", "content": "Open settings, choose WiFi, and enter the password to connect." },
+          "step2": { "heading": "Use mobile data", "content": "Turn on mobile data when WiFi is not available. Watch your data balance." },
+          "step3": { "heading": "Choose secure networks", "content": "Avoid unknown public WiFi when entering personal details." }
+        }
+      },
+      "lesson3": {
+        "title": "Using a web browser",
+        "steps": {
+          "step1": { "heading": "Open your browser", "content": "Use Chrome or another browser to visit websites." },
+          "step2": { "heading": "Type web addresses", "content": "Enter website names carefully to avoid fake pages." },
+          "step3": { "heading": "Use tabs and back button", "content": "Tabs help you keep multiple pages open. Back button returns to the previous page." }
+        }
+      },
+      "lesson4": {
+        "title": "How to search safely",
+        "steps": {
+          "step1": { "heading": "Use simple search words", "content": "Type clear words like weather Kano today for better results." },
+          "step2": { "heading": "Open trusted results", "content": "Pick results from known sites and avoid suspicious links." },
+          "step3": { "heading": "Double-check information", "content": "Compare information from two or more reliable websites before sharing." }
+        }
+      },
+      "lesson5": {
+        "title": "Understanding trusted websites",
+        "steps": {
+          "step1": { "heading": "Look for HTTPS", "content": "Trusted sites usually start with https and show a lock icon." },
+          "step2": { "heading": "Check the website name", "content": "Scam sites use names similar to real brands. Read the full address carefully." },
+          "step3": { "heading": "Protect your details", "content": "Do not enter password or bank details unless you are sure the site is real." }
+        }
+      }
+    },
+    "email_messaging": {
+      "lesson1": {
+        "title": "What is email",
+        "steps": {
+          "step1": { "heading": "Email is digital post", "content": "Email lets you send messages and files to people over the internet." },
+          "step2": { "heading": "Every email has an address", "content": "An address like name@gmail.com helps people send messages to you." },
+          "step3": { "heading": "Email is useful for school and work", "content": "You can use email for forms, jobs, and learning opportunities." }
+        }
+      },
+      "lesson2": {
+        "title": "Creating a Gmail account",
+        "steps": {
+          "step1": { "heading": "Open Gmail sign up", "content": "Go to Gmail create account and fill your basic details." },
+          "step2": { "heading": "Create a strong password", "content": "Use letters, numbers, and symbols. Do not use your name only." },
+          "step3": { "heading": "Add recovery options", "content": "Add a phone number so you can recover your account if needed." }
+        }
+      },
+      "lesson3": {
+        "title": "Sending and receiving emails",
+        "steps": {
+          "step1": { "heading": "Compose a new email", "content": "Tap compose, add recipient address, then write a clear subject and message." },
+          "step2": { "heading": "Read inbox messages", "content": "Open your inbox regularly to read replies and important updates." },
+          "step3": { "heading": "Reply politely", "content": "Use respectful and short replies so communication stays clear." }
+        }
+      },
+      "lesson4": {
+        "title": "Using WhatsApp",
+        "steps": {
+          "step1": { "heading": "Set up your profile", "content": "Add your name and a simple photo so friends can identify you." },
+          "step2": { "heading": "Send text and voice notes", "content": "Use text for quick messages and voice notes when typing is hard." },
+          "step3": { "heading": "Manage group chats", "content": "Mute noisy groups and avoid forwarding unverified messages." }
+        }
+      },
+      "lesson5": {
+        "title": "Staying safe while messaging",
+        "steps": {
+          "step1": { "heading": "Protect private chats", "content": "Do not share personal photos, codes, or sensitive details with strangers." },
+          "step2": { "heading": "Spot fake links", "content": "Ignore links promising free money, gifts, or urgent account fixes." },
+          "step3": { "heading": "Block and report abuse", "content": "Use block and report tools if someone threatens or scams you." }
+        }
+      }
+    },
+    "online_safety": {
+      "lesson1": {
+        "title": "Protecting your personal information",
+        "steps": {
+          "step1": { "heading": "Know what is private", "content": "Phone number, ID details, and bank information should be kept private." },
+          "step2": { "heading": "Share less online", "content": "Only share what is needed. Too much personal posting can be risky." },
+          "step3": { "heading": "Use privacy settings", "content": "Limit who can see your profile, posts, and status updates." }
+        }
+      },
+      "lesson2": {
+        "title": "Recognizing scams and fake messages",
+        "steps": {
+          "step1": { "heading": "Watch for urgent pressure", "content": "Scammers push you to act fast. Slow down and verify first." },
+          "step2": { "heading": "Check the sender", "content": "Look closely at numbers and email addresses before trusting messages." },
+          "step3": { "heading": "Do not share OTP codes", "content": "One-time password codes are private. No real support team will ask for them." }
+        }
+      },
+      "lesson3": {
+        "title": "Creating strong passwords",
+        "steps": {
+          "step1": { "heading": "Use long passwords", "content": "Use at least 10 characters with mixed letters, numbers, and symbols." },
+          "step2": { "heading": "Use different passwords", "content": "Do not use one password for every app. If one leaks, others stay safe." },
+          "step3": { "heading": "Store passwords safely", "content": "Use a trusted password manager or a private notebook kept secure." }
+        }
+      },
+      "lesson4": {
+        "title": "Safe social media use",
+        "steps": {
+          "step1": { "heading": "Think before posting", "content": "Ask if this post is safe and respectful before sharing publicly." },
+          "step2": { "heading": "Control who contacts you", "content": "Use privacy controls to reduce unknown messages and harassment." },
+          "step3": { "heading": "Avoid harmful challenges", "content": "Do not join dangerous online trends just because others are doing them." }
+        }
+      },
+      "lesson5": {
+        "title": "What to do if something goes wrong",
+        "steps": {
+          "step1": { "heading": "Act quickly", "content": "Change password immediately if you think your account was accessed." },
+          "step2": { "heading": "Ask for trusted help", "content": "Contact a trusted friend, family member, or official support channel." },
+          "step3": { "heading": "Report and recover", "content": "Use report tools in the app and follow recovery steps to secure your account." }
+        }
+      }
     }
   },
   "surprise": {

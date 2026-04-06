@@ -1,0 +1,16 @@
+---
+description: Enforce DigiLearn AsiyaUI consistency and keep reference updated
+alwaysApply: true
+---
+
+# AsiyaUI Consistency Rule
+
+For any UI-related change in this project:
+
+- Follow the AsiyaUI guide in `docs/ASIYAUI.md`.
+- Preserve the current product feel: clean light UI, bold readable contrast, and friendly rounded surfaces.
+- Use Tailwind color tokens from `tailwind.config.ts` (`accent`, `off-white`, `light-bg`, `dark-bg`, `white`) instead of ad-hoc palette choices.
+- Ensure visible accent usage across screens via actions, highlights, or separators (not only one isolated button).
+- Keep spacing and card separation clear for scanability.
+
+When visual design behavior changes, update `docs/ASIYAUI.md` in the same task to reflect the new standard.

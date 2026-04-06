@@ -99,7 +99,6 @@
     "prompt": {
       "title": "A tiny secret",
       "label": "Type your name",
-      "placeholder": "Asiya or Aseeyah",
       "greeting": "Nice to meet you, {{name}}!",
       "fallback": "Is your name not Asiya or Aseeyah?",
       "continue": "Continue"
@@ -107,7 +106,8 @@
     "reveal": {
       "kicker": "Surprise time",
       "title": "Awwwwn!",
-      "subtitle": "Asiya/Aseeyah detected. Hey, {{name}}."
+      "subtitle": "Asiya, some people inspire songs. Some inspire poetry. You inspired an entire app. Every feature, every lesson, every screen was built thinking of your smile and your spirit. Your dedication, your zeal, your hunger to be more, you inspire this more than you know. This will always be yours, whether you know it or not. Smiles 😊😊.",
+      "continue": "Continue"
     }
   }
 }

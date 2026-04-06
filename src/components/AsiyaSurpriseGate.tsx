@@ -58,20 +58,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
     }
   }, []);
 
-  useEffect(() => {
-    if (phase !== 'reveal') return;
-    const timer = window.setTimeout(() => {
-      try {
-        localStorage.setItem(SURPRISE_SEEN_KEY, '1');
-      } catch {
-        // ignore
-      }
-      setPhase('normal');
-    }, 2400);
-
-    return () => window.clearTimeout(timer);
-  }, [phase]);
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const normalized = normalizeName(name);
@@ -88,6 +74,15 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
     setFallbackVisible(true);
   };
 
+  const handleRevealContinue = () => {
+    try {
+      localStorage.setItem(SURPRISE_SEEN_KEY, '1');
+    } catch {
+      // ignore
+    }
+    setPhase('normal');
+  };
+
   if (phase === 'checking') {
     return (
       <div className="flex items-center justify-center min-h-screen bg-off-white">
@@ -100,7 +95,7 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
     return <>{children}</>;
   }
   const revealMessage = t('surprise.reveal.title');
-  const revealSubtitle = t('surprise.reveal.subtitle', { name: typedNameForUi || name.trim() });
+  const revealSubtitle = t('surprise.reveal.subtitle');
 
   return (
     <div className="relative min-h-screen">
@@ -127,7 +122,6 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
                   setFallbackVisible(false);
                 }}
                 className="w-full bg-light-bg p-4 rounded-2xl shadow-sm border border-gray-100 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all placeholder:text-gray-400 font-medium"
-                placeholder={t('surprise.prompt.placeholder')}
                 autoComplete="off"
               />
 
@@ -168,7 +162,14 @@ export default function AsiyaSurpriseGate({ children }: { children: ReactNode })
                 {t('surprise.reveal.kicker')}
               </p>
               <h2 className="text-2xl font-extrabold text-gray-900 mb-2 leading-tight">{revealMessage}</h2>
-              <p className="text-sm text-gray-600 font-semibold">{revealSubtitle}</p>
+              <p className="text-sm text-gray-600 font-semibold leading-relaxed">{revealSubtitle}</p>
+              <button
+                type="button"
+                onClick={handleRevealContinue}
+                className="mt-5 w-full bg-accent text-gray-900 font-extrabold py-3 rounded-2xl text-base active:scale-95 transition-transform"
+              >
+                {t('surprise.reveal.continue')}
+              </button>
             </div>
 
             {/* Confetti burst (pure CSS via inline styles, no extra dependencies). */}

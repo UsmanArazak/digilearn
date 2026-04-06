@@ -26,7 +26,7 @@ export default function LandingPage() {
         <p className="text-gray-400 font-bold text-sm mb-2 uppercase tracking-widest animate-fade-in-up">
            {t('landing.info')}
         </p>
-        <h1 className="text-4xl font-black leading-[1.1] mb-2 tracking-tighter whitespace-pre-line">
+        <h1 className="text-2xl font-extrabold leading-tight mb-2 tracking-tight">
            {t('landing.choose_course')}
         </h1>
       </section>
@@ -34,6 +34,7 @@ export default function LandingPage() {
       {/* Course Cards */}
       <section className="flex flex-col gap-4 mb-8">
         {/* Safe Online Card */}
+        <Link href="/login" className="block">
         <div className="bg-accent rounded-[2.5rem] p-7 relative overflow-hidden min-h-[160px] shadow-lg shadow-accent/5 flex flex-col active:scale-[0.98] transition-transform">
            <div className="relative z-10 flex flex-col h-full">
              <div className="flex justify-between items-start">
@@ -51,8 +52,10 @@ export default function LandingPage() {
               </div>
            </div>
         </div>
+        </Link>
 
         {/* Internet 101 Card */}
+        <Link href="/login" className="block">
         <div className="bg-gray-900 rounded-[2.5rem] p-7 relative overflow-hidden min-h-[160px] shadow-xl shadow-black/5 flex flex-col active:scale-[0.98] transition-transform">
            <div className="relative z-10 flex flex-col h-full">
              <div className="flex justify-between items-start">
@@ -73,6 +76,7 @@ export default function LandingPage() {
               </div>
            </div>
         </div>
+        </Link>
       </section>
 
       {/* CTA Section */}

@@ -23,13 +23,9 @@ export default function Login() {
       return;
     }
 
-    const success = login(phone);
-    if (success) {
-      const savedUser = localStorage.getItem('digilearn_user');
-      if (savedUser) {
-        const parsedUser = JSON.parse(savedUser);
-        i18n.changeLanguage(parsedUser.language);
-      }
+    const authenticatedUser = login(phone);
+    if (authenticatedUser) {
+      i18n.changeLanguage(authenticatedUser.language);
       router.push('/home');
     } else {
       setError(t('auth.errors.no_account'));

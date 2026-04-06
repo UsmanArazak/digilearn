@@ -5,6 +5,7 @@
   },
   "hero": {
     "welcome": "Welcome to DigiLearn",
+    "welcome_name": "Welcome, {{name}}!",
     "subtitle": "Learn the digital skills you need to succeed, step by step.",
     "cta": "Get Started"
   },
@@ -54,6 +55,8 @@
   "auth": {
     "create_account": "Create Account",
     "sign_in": "Sign In",
+    "sign_out": "Sign Out",
+    "have_account": "Already have an account?",
     "full_name": "Full Name",
     "phone_number": "Phone Number",
     "select_language": "Select Language",
@@ -66,6 +69,30 @@
       "fill_all": "Please fill all fields",
       "no_account": "No account found with that number. Please register first.",
       "welcome_back": "Welcome back!"
+    }
+  },
+  "course": {
+    "back_to_home": "Back to home",
+    "lessons_count": "{{count}} lessons",
+    "duration": "~{{count}} min",
+    "lesson_number": "Lesson {{count}}"
+  },
+  "course_content": {
+    "stay_safe_online": {
+      "lessons": [
+        "Create strong passwords and keep them private",
+        "Spot online scams and fake offers",
+        "Protect your phone with lock screen and updates",
+        "Share safely on WhatsApp and social media"
+      ]
+    },
+    "internet_101": {
+      "lessons": [
+        "What the internet is and how it works",
+        "Use search engines to find trusted information",
+        "Open websites safely and avoid harmful links",
+        "Manage mobile data and browse efficiently"
+      ]
     }
   }
 }

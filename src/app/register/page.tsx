@@ -112,6 +112,12 @@ export default function Register() {
           {t('auth.create_account')}
         </button>
       </form>
+
+      <div className="mt-8 text-center">
+        <p className="text-gray-400 font-bold text-sm">
+          {t('auth.have_account')} <Link href="/login" className="text-gray-900">{t('auth.sign_in')}</Link>
+        </p>
+      </div>
     </div>
   );
 }

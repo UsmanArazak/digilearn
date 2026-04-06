@@ -5,6 +5,7 @@
   },
   "hero": {
     "welcome": "Sannu ku da zuwa DigiLearn!",
+    "welcome_name": "Sannu {{name}}!",
     "subtitle": "Koyi harkar na'ura mai kwakwalwa cikin sauƙi, mataki-mataki.",
     "cta": "Maza mu fara!"
   },
@@ -54,6 +55,8 @@
   "auth": {
     "create_account": "Bude Asusu",
     "sign_in": "Shiga Ciki",
+    "sign_out": "Fita",
+    "have_account": "Kana da asusu?",
     "full_name": "Sunan Ka",
     "phone_number": "Lambar Waya",
     "select_language": "Wanne harshe ka fi so?",
@@ -66,6 +69,30 @@
       "fill_all": "Dan Allah cika dukkan wuraren",
       "no_account": "Ba mu sami asusu da wannan lambar ba. Yi rajista mana!",
       "welcome_back": "Maraba da dawowa!"
+    }
+  },
+  "course": {
+    "back_to_home": "Koma gida",
+    "lessons_count": "Darussa {{count}}",
+    "duration": "~Minti {{count}}",
+    "lesson_number": "Darasi na {{count}}"
+  },
+  "course_content": {
+    "stay_safe_online": {
+      "lessons": [
+        "Ka kirkiri kalmar sirri mai karfi kuma ka boye ta",
+        "Ka gane damfara da sakonnin karya a yanar gizo",
+        "Ka kare wayarka da makulli da sabunta tsarin ta",
+        "Ka rika rabawa lafiya a WhatsApp da kafafen sada zumunta"
+      ]
+    },
+    "internet_101": {
+      "lessons": [
+        "Menene intanet kuma yaya take aiki",
+        "Yadda ake amfani da bincike domin samun sahihin bayani",
+        "Budewa shafukan yanar gizo cikin aminci da kaucewa mugun link",
+        "Yadda zaka sarrafa data domin yin amfani da intanet cikin sauki"
+      ]
     }
   }
 }

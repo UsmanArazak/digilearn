@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "DigiLearn",
+    "lang_toggle": "HA"
+  },
+  "hero": {
+    "welcome": "Welcome to DigiLearn",
+    "subtitle": "Learn the digital skills you need to succeed, step by step.",
+    "cta": "Get Started"
+  },
+  "skill_tracks": {
+    "phone_basics": {
+      "title": "Phone Basics",
+      "description": "Learn to use your smartphone, install apps, and manage settings."
+    },
+    "internet_101": {
+      "title": "Internet 101",
+      "description": "Understand how to browse safely and use search engines."
+    },
+    "email_messaging": {
+      "title": "Email and Messaging",
+      "description": "Create a Gmail account and use WhatsApp effectively."
+    },
+    "online_safety": {
+      "title": "Online Safety",
+      "description": "Protect your personal information and recognize scams."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "progress": "Progress",
+    "profile": "Profile"
+  }
+}

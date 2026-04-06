@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "DigiLearn",
+    "lang_toggle": "EN"
+  },
+  "hero": {
+    "welcome": "Barka da zuwa DigiLearn",
+    "subtitle": "Koyi fasahar zamani mataki-mataki cikin sauƙi.",
+    "cta": "Fara Yanzu"
+  },
+  "skill_tracks": {
+    "phone_basics": {
+      "title": "Fahimtar Wayoyi",
+      "description": "Koyi yadda ake amfani da wayar zamani da saita ayyuka."
+    },
+    "internet_101": {
+      "title": "Ilimin Intanet 101",
+      "description": "Fahimtar yadda ake bincike a kan yanar gizo lafiya."
+    },
+    "email_messaging": {
+      "title": "Imel da Saƙonni",
+      "description": "Bude Imel, da amfani da WhatsApp yadda ya kamata."
+    },
+    "online_safety": {
+      "title": "Tsaro a Yanar Gizo",
+      "description": "Koyi yadda zaka kare bayanan ka daga masu damfara."
+    }
+  },
+  "nav": {
+    "home": "Gida",
+    "search": "Bincika",
+    "progress": "Ci gaba",
+    "profile": "Asusu"
+  }
+}

@@ -10,11 +10,11 @@ export default function Home() {
   const { t } = useTranslation('common');
 
   return (
-    <>
+    <div className="bg-off-white min-h-screen flex flex-col">
       <Header />
       
       <main className="flex-1 px-4 pb-28">
-        {/* Hero Section */}
+        {/* ... */}
         <section className="mt-2 mb-8">
           <h2 className="text-3xl font-extrabold text-gray-900 mb-3 leading-tight tracking-tight">
             {t('hero.welcome')}
@@ -53,6 +53,6 @@ export default function Home() {
       </main>
 
       <BottomNav />
-    </>
+    </div>
   );
 }

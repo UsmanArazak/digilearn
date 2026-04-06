@@ -9,11 +9,8 @@
     "cta": "Get Started"
   },
   "landing": {
+    "info": "Master the digital world with free, offline lessons designed for you.",
     "choose_course": "Choose your\ncourse",
-    "categories": {
-      "design": "Design",
-      "programming": "Programming"
-    },
     "by_author": "By DigiLearn Team",
     "mobile_track": "Mobile track",
     "web_track": "Web track",
@@ -29,9 +26,9 @@
     }
   },
   "skill_tracks": {
-    "phone_basics": {
-      "title": "Phone Basics",
-      "description": "Learn to use your smartphone, install apps, and manage settings."
+    "stay_safe_online": {
+      "title": "How to stay safe online",
+      "description": "Learn to protect your personal information and recognize scams."
     },
     "internet_101": {
       "title": "Internet 101",

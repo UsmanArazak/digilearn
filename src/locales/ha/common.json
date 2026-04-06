@@ -9,11 +9,8 @@
     "cta": "Maza mu fara!"
   },
   "landing": {
+    "info": "Koyi harkar waya da intanet kyauta, ba tare da ka kashe ko sisi ba.",
     "choose_course": "Zaɓi darasin\nda kake so",
-    "categories": {
-      "design": "Zane-zane",
-      "programming": "Shirye-shirye"
-    },
     "by_author": "Daga DigiLearn Team",
     "mobile_track": "Darasin Waya",
     "web_track": "Darasin Intanet",
@@ -29,9 +26,9 @@
     }
   },
   "skill_tracks": {
-    "phone_basics": {
-      "title": "Sanin Wayar Ka",
-      "description": "Koyi yadda zaka saita wayar ka, sanya sabbin apps, da komai."
+    "stay_safe_online": {
+      "title": "Yadda za ka kare kanka",
+      "description": "Koyi yadda zaka kare bayanan ka daga masu damfara a yanar gizo."
     },
     "internet_101": {
       "title": "Ilimin Intanet",

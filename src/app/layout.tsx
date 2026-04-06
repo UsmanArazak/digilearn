@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "DigiLearn",
   description: "Learn the digital skills you need to succeed",
   manifest: "/manifest.json",
+};
+
+export const viewport = {
   themeColor: "#fafafa"
 };
 

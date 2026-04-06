@@ -31,5 +31,17 @@
     "search": "Search",
     "progress": "Progress",
     "profile": "Profile"
+  },
+  "landing": {
+    "heading": "Learn Digital Skills In Your Language",
+    "subtitle": "Empowering young people in Northern Nigeria with free, offline digital literacy.",
+    "tag": "Free. Offline. In Hausa.",
+    "cta": "Get Started",
+    "sign_in": "Already have an account? Sign In",
+    "stats": {
+      "tracks": "4 Tracks",
+      "lessons": "20+ Lessons",
+      "languages": "2 Languages"
+    }
   }
 }

@@ -16,7 +16,7 @@ export default function Header() {
       <h1 className="text-2xl font-bold tracking-tight text-gray-900">
         {t('header.title')}
       </h1>
-      <button 
+      <button
         onClick={toggleLanguage}
         className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-full shadow-sm text-sm font-semibold border border-gray-100 active:scale-95 transition-transform"
       >

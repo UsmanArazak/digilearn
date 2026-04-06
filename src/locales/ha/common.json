@@ -31,5 +31,17 @@
     "search": "Bincika",
     "progress": "Ci gaba",
     "profile": "Asusu"
+  },
+  "landing": {
+    "heading": "Koyi Fasahar Zamani Da Harshen Ka",
+    "subtitle": "Ba wa matasan Arewa damar koyon ilimin na'ura mai kwakwalwa kyauta.",
+    "tag": "Kyauta. Ba tare da intanet ba. Da Hausa.",
+    "cta": "Fara Yanzu",
+    "sign_in": "Tana da asusu riga? Shiga nan",
+    "stats": {
+      "tracks": "Darussa 4",
+      "lessons": "Darussa 20+",
+      "languages": "Harsuna 2"
+    }
   }
 }

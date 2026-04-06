@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <I18nProvider>
-          <div className="max-w-[430px] mx-auto min-h-screen bg-off-white relative shadow-[0_0_40px_rgba(0,0,0,0.05)] sm:border-x sm:border-gray-100 flex flex-col">
+          <div className="max-w-[430px] mx-auto min-h-screen relative shadow-[0_0_40px_rgba(0,0,0,0.05)] sm:border-x sm:border-gray-100 flex flex-col">
             {children}
           </div>
         </I18nProvider>

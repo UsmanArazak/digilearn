@@ -2,7 +2,7 @@
 
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
-import { Globe, Heart, Bookmark, Lock, MousePointer2, Smartphone, ChevronRight, Layout, Search, Target, User } from 'lucide-react';
+import { Globe, MousePointer2, Smartphone, ChevronRight, Layout, Search, Target, User } from 'lucide-react';
 
 export default function LandingPage() {
   const { t, i18n } = useTranslation('common');
@@ -52,91 +52,58 @@ export default function LandingPage() {
       </section>
 
       {/* Big Course Cards */}
-      <section className="flex flex-col gap-6 mb-10">
+      <section className="flex flex-col gap-5 mb-10">
         {/* Phone Basics Card */}
-        <div className="bg-accent rounded-[3.5rem] p-8 relative overflow-hidden min-h-[380px] shadow-xl shadow-accent/10 flex flex-col group active:scale-[0.98] transition-transform">
+        <div className="bg-accent rounded-[2.5rem] p-7 relative overflow-hidden min-h-[200px] shadow-lg shadow-accent/5 flex flex-col active:scale-[0.98] transition-transform">
            <div className="relative z-10 flex flex-col h-full">
              <div className="flex justify-between items-start">
-                <h2 className="text-3xl font-black leading-[1.1] max-w-[180px] text-gray-900">
+                <h2 className="text-2xl font-black leading-tight max-w-[140px] text-gray-900">
                    {t('skill_tracks.phone_basics.title')}
                 </h2>
-                <div className="flex gap-2">
-                    <div className="bg-white/40 p-2.5 rounded-full backdrop-blur-md"><Heart size={20} className="text-gray-900" /></div>
-                    <div className="bg-white/40 p-2.5 rounded-full backdrop-blur-md"><Bookmark size={20} className="text-gray-900" /></div>
-                </div>
              </div>
-             <p className="text-sm font-bold text-gray-900/50 mt-2">By DigiLearn Team</p>
+             <p className="text-xs font-bold text-gray-900/40 mt-1 uppercase tracking-wider">By DigiLearn Team</p>
              
-             <div className="mt-auto flex items-center">
-                <div className="bg-white px-5 py-2.5 rounded-full text-xs font-black shadow-sm">
+             <div className="mt-auto">
+                <div className="bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-black inline-block">
                    Mobile track
                 </div>
              </div>
            </div>
 
-           {/* Large Illustration Content */}
-           <div className="absolute right-[-10%] bottom-[5%] w-[70%] h-[70%] flex items-center justify-center pointer-events-none">
-              <Smartphone size={200} className="text-gray-900 opacity-5 absolute scale-125" strokeWidth={1} />
+           {/* Illustration Content */}
+           <div className="absolute right-[-5%] bottom-[-5%] w-[50%] h-[80%] flex items-center justify-center pointer-events-none">
               <div className="relative">
-                 <div className="w-48 h-48 bg-white/20 rounded-full blur-3xl absolute animate-pulse"></div>
-                 <Smartphone size={160} className="text-gray-900 relative drop-shadow-2xl animate-float" strokeWidth={1.5} />
+                 <div className="w-32 h-32 bg-white/20 rounded-full blur-2xl absolute animate-pulse"></div>
+                 <Smartphone size={100} className="text-gray-900 relative drop-shadow-xl animate-float" strokeWidth={1.5} />
               </div>
-           </div>
-
-           {/* Lock Controls */}
-           <div className="absolute left-8 bottom-8 flex items-center gap-2">
-             <div className="bg-black/10 p-4 rounded-3xl backdrop-blur-md border border-white/20">
-                <Lock size={22} className="text-gray-900" />
-             </div>
-             <div className="w-12 h-1 h-0.5 bg-black/10 rounded-full"></div>
-             <div className="bg-white/30 p-4 rounded-3xl backdrop-blur-md border border-white/20">
-                <Lock size={22} className="text-gray-900 opacity-30" />
-             </div>
            </div>
         </div>
 
-        {/* Internet 101 Card (Secondary style like the reference) */}
-        <div className="bg-gray-900 rounded-[3.5rem] p-8 relative overflow-hidden min-h-[380px] flex flex-col active:scale-[0.98] transition-transform">
+        {/* Internet 101 Card */}
+        <div className="bg-gray-900 rounded-[2.5rem] p-7 relative overflow-hidden min-h-[200px] shadow-xl shadow-black/5 flex flex-col active:scale-[0.98] transition-transform">
            <div className="relative z-10 flex flex-col h-full">
              <div className="flex justify-between items-start">
-                <h2 className="text-3xl font-black leading-[1.1] max-w-[180px] text-white">
+                <h2 className="text-2xl font-black leading-tight max-w-[140px] text-white">
                    {t('skill_tracks.internet_101.title')}
                 </h2>
-                <div className="flex gap-2">
-                    <div className="bg-white/10 p-2.5 rounded-full backdrop-blur-md"><Heart size={20} className="text-white" /></div>
-                    <div className="bg-white/10 p-2.5 rounded-full backdrop-blur-md"><Bookmark size={20} className="text-white" /></div>
-                </div>
              </div>
-             <p className="text-sm font-bold text-white/40 mt-2">By DigiLearn Team</p>
+             <p className="text-xs font-bold text-white/20 mt-1 uppercase tracking-wider">By DigiLearn Team</p>
              
-             <div className="mt-8 flex flex-col gap-4">
-                <div className="bg-white/10 p-5 rounded-[2rem] border border-white/5 backdrop-blur-sm flex items-center gap-4">
-                   <div className="bg-accent p-3 rounded-2xl text-gray-900">
-                      <Layout size={24} />
-                   </div>
-                   <div className="flex-1">
-                      <p className="text-xs font-bold text-white/40">12 minutes</p>
-                      <h4 className="text-sm font-black text-white">Safe Browsing</h4>
-                   </div>
-                   <div className="bg-white p-2 rounded-full"><ChevronRight size={16} className="text-gray-900" /></div>
+             <div className="mt-auto">
+                <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-black text-white inline-block border border-white/5">
+                   Web track
                 </div>
              </div>
            </div>
            
-           <div className="mt-auto z-10">
-              <div className="bg-white/10 px-5 py-2.5 rounded-full text-xs font-black text-white inline-block border border-white/5">
-                 Web track
-              </div>
-           </div>
-
            {/* Graphic Element */}
-           <div className="absolute right-[-15%] top-[20%] w-[60%] h-[60%] opacity-10 pointer-events-none">
-              <Globe size={300} className="text-accent" strokeWidth={1} />
+           <div className="absolute right-[-10%] bottom-[-10%] w-[50%] h-[80%] flex items-center justify-center pointer-events-none opacity-40">
+              <Globe size={180} className="text-accent" strokeWidth={1} />
            </div>
            
-           <div className="absolute right-8 bottom-8">
-              <div className="w-14 h-14 bg-accent rounded-full flex items-center justify-center shadow-lg shadow-accent/20">
-                 <ChevronRight size={24} className="text-gray-900" />
+           <div className="absolute right-6 bottom-6">
+              <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center shadow-lg shadow-accent/20">
+                 <ChevronRight size={20} className="text-gray-900" />
               </div>
            </div>
         </div>

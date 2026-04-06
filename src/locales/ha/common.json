@@ -94,5 +94,20 @@
         "Yadda zaka sarrafa data domin yin amfani da intanet cikin sauki"
       ]
     }
+  },
+  "surprise": {
+    "prompt": {
+      "title": "Wani sirri",
+      "label": "Rubuta sunanka",
+      "placeholder": "Asiya ko Aseeyah",
+      "greeting": "Maraba da sunan ka, {{name}}!",
+      "fallback": "Shin sunan ka ba Asiya ko Aseeyah ba ne?",
+      "continue": "Gaba"
+    },
+    "reveal": {
+      "kicker": "Lokacin mamaki",
+      "title": "Awwwww!",
+      "subtitle": "An gane sunan Asiya/Aseeyah. Hey, {{name}}."
+    }
   }
 }

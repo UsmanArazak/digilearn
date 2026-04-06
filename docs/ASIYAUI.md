@@ -52,3 +52,17 @@ When any UI styling changes:
    - Any revised visual rules
 3. Run `npm run lint` to verify no regressions.
 
+## Special Reveal Pattern (Asiya Surprise)
+Used for the landing-page one-time romantic reveal.
+- Overlay:
+  - Use a fixed veil (`bg-off-white/80` + `backdrop-blur`)
+  - Keep the focus on a single centered white card (`bg-white`, rounded corners, subtle border/shadow)
+- Accent:
+  - Accent is primarily expressed through `text-accent` (icons) and `bg-accent` (confetti/badges)
+  - Use translucent accent surfaces (`bg-accent/20`) for soft glow backgrounds
+- Animation style:
+  - Keep motion brief (around 2–3 seconds)
+  - Favor small, joyful effects (floating hearts, sparkles, lightweight confetti) over heavy screen shaking
+- Privacy:
+  - The reveal is gated client-side (localStorage) so it only appears on the user’s device.
+

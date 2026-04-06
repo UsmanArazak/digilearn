@@ -94,5 +94,20 @@
         "Manage mobile data and browse efficiently"
       ]
     }
+  },
+  "surprise": {
+    "prompt": {
+      "title": "A tiny secret",
+      "label": "Type your name",
+      "placeholder": "Asiya or Aseeyah",
+      "greeting": "Nice to meet you, {{name}}!",
+      "fallback": "Is your name not Asiya or Aseeyah?",
+      "continue": "Continue"
+    },
+    "reveal": {
+      "kicker": "Surprise time",
+      "title": "Awwwwn!",
+      "subtitle": "Asiya/Aseeyah detected. Hey, {{name}}."
+    }
   }
 }

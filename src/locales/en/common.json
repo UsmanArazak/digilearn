@@ -8,6 +8,26 @@
     "subtitle": "Learn the digital skills you need to succeed, step by step.",
     "cta": "Get Started"
   },
+  "landing": {
+    "choose_course": "Choose your\ncourse",
+    "categories": {
+      "design": "Design",
+      "programming": "Programming"
+    },
+    "by_author": "By DigiLearn Team",
+    "mobile_track": "Mobile track",
+    "web_track": "Web track",
+    "heading": "Learn Digital Skills In Your Language",
+    "subtitle": "Empowering young people in Northern Nigeria with free, offline digital literacy.",
+    "tag": "Free. Offline. In Hausa.",
+    "cta": "Get Started",
+    "sign_in": "Already have an account? Sign In",
+    "stats": {
+      "tracks": "4 Tracks",
+      "lessons": "20+ Lessons",
+      "languages": "2 Languages"
+    }
+  },
   "skill_tracks": {
     "phone_basics": {
       "title": "Phone Basics",
@@ -24,7 +44,9 @@
     "online_safety": {
       "title": "Online Safety",
       "description": "Protect your personal information and recognize scams."
-    }
+    },
+    "safe_browsing": "Safe Browsing",
+    "duration_min": "{{count}} minutes"
   },
   "nav": {
     "home": "Home",
@@ -32,24 +54,17 @@
     "progress": "Progress",
     "profile": "Profile"
   },
-  "landing": {
-    "heading": "Learn Digital Skills In Your Language",
-    "subtitle": "Empowering young people in Northern Nigeria with free, offline digital literacy.",
-    "tag": "Free. Offline. In Hausa.",
-    "cta": "Get Started",
-    "sign_in": "Already have an account? Sign In",
-    "stats": {
-      "tracks": "4 Tracks",
-      "lessons": "20+ Lessons",
-      "languages": "2 Languages"
-    }
-  },
   "auth": {
     "create_account": "Create Account",
     "sign_in": "Sign In",
     "full_name": "Full Name",
     "phone_number": "Phone Number",
     "select_language": "Select Language",
+    "no_account": "Don't have an account?",
+    "placeholders": {
+      "name": "e.g. John Doe",
+      "phone": "080 123 4567"
+    },
     "errors": {
       "fill_all": "Please fill all fields",
       "no_account": "No account found with that number. Please register first.",

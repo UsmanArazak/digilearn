@@ -10,11 +10,13 @@ const resources = {
 };
 
 if (!i18n.isInitialized) {
+  const savedLng = typeof window !== 'undefined' ? localStorage.getItem('digilearn_language') : 'en';
+  
   i18n
     .use(initReactI18next)
     .init({
       resources,
-      lng: 'en',
+      lng: savedLng || 'en',
       fallbackLng: 'en',
       ns: ['common'],
       defaultNS: 'common',
@@ -22,6 +24,13 @@ if (!i18n.isInitialized) {
         escapeValue: false // react already safes from xss
       }
     });
+
+  // Keep localStorage in sync with language changes
+  i18n.on('languageChanged', (lng) => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('digilearn_language', lng);
+    }
+  });
 }
 
 export default i18n;

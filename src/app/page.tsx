@@ -2,50 +2,40 @@
 
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
-import { Globe, MousePointer2, Smartphone, ChevronRight, Layout, Search, Target, User } from 'lucide-react';
+import { MousePointer2, Smartphone, ChevronRight, Layout, Search, Target, User, Globe } from 'lucide-react';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function LandingPage() {
-  const { t, i18n } = useTranslation('common');
-
-  const toggleLanguage = () => {
-    const nextLang = i18n.language === 'en' ? 'ha' : 'en';
-    i18n.changeLanguage(nextLang);
-  };
+  const { t } = useTranslation('common');
 
   return (
     <div className="bg-off-white text-gray-900 min-h-screen flex flex-col p-6 animate-fade-in overflow-x-hidden pb-32">
       {/* Header */}
       <header className="flex justify-between items-center mb-10">
-        <div className="text-xl font-bold tracking-tighter flex items-center gap-2">
+        <div className="text-xl font-black tracking-tighter flex items-center gap-2">
           <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
              <div className="w-4 h-4 bg-accent rounded-sm rotate-45"></div>
           </div>
           DigiLearn
         </div>
-        <button 
-          onClick={toggleLanguage}
-          className="flex items-center gap-2 bg-white border border-gray-100 px-3 py-1.5 rounded-full text-sm font-bold shadow-sm active:scale-95 transition-all"
-        >
-          <Globe size={16} />
-          <span>{t('header.lang_toggle')}</span>
-        </button>
+        <LanguageSwitcher />
       </header>
 
       {/* Hero Section */}
       <section className="mb-10">
-        <h1 className="text-3xl font-black leading-tight mb-2 tracking-tight">
-          Choose your<br />course
+        <h1 className="text-3xl font-black leading-tight mb-2 tracking-tight whitespace-pre-line">
+           {t('landing.choose_course')}
         </h1>
         
         {/* Category Chips */}
         <div className="flex gap-3 overflow-x-auto py-4 no-scrollbar -mx-6 px-6">
-           <div className="bg-white p-3 px-6 rounded-full shadow-sm flex items-center gap-3 border border-gray-50 flex-shrink-0">
+           <div className="bg-white p-4 px-6 rounded-full shadow-sm flex items-center gap-3 border border-gray-50 flex-shrink-0">
               <MousePointer2 size={18} className="text-accent fill-accent" />
-              <span className="font-bold text-sm">Design</span>
+              <span className="font-bold text-sm">{t('landing.categories.design')}</span>
               <span className="bg-gray-100 px-2 py-0.5 rounded-md text-[10px] font-black">10</span>
            </div>
-           <div className="bg-gray-100 p-3 px-6 rounded-full flex items-center gap-3 flex-shrink-0">
-              <span className="font-bold text-sm text-gray-500">Programming</span>
+           <div className="bg-gray-100 p-4 px-6 rounded-full flex items-center gap-3 flex-shrink-0">
+              <span className="font-bold text-sm text-gray-400">{t('landing.categories.programming')}</span>
               <span className="bg-gray-200 px-2 py-0.5 rounded-md text-[10px] font-black">24</span>
            </div>
         </div>
@@ -61,11 +51,11 @@ export default function LandingPage() {
                    {t('skill_tracks.phone_basics.title')}
                 </h2>
              </div>
-             <p className="text-xs font-bold text-gray-900/40 mt-1 uppercase tracking-wider">By DigiLearn Team</p>
+             <p className="text-xs font-bold text-gray-900/40 mt-1 uppercase tracking-wider">{t('landing.by_author')}</p>
              
              <div className="mt-auto">
                 <div className="bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-black inline-block">
-                   Mobile track
+                   {t('landing.mobile_track')}
                 </div>
              </div>
            </div>
@@ -87,11 +77,11 @@ export default function LandingPage() {
                    {t('skill_tracks.internet_101.title')}
                 </h2>
              </div>
-             <p className="text-xs font-bold text-white/20 mt-1 uppercase tracking-wider">By DigiLearn Team</p>
+             <p className="text-xs font-bold text-white/20 mt-1 uppercase tracking-wider">{t('landing.by_author')}</p>
              
              <div className="mt-auto">
                 <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-black text-white inline-block border border-white/5">
-                   Web track
+                   {t('landing.web_track')}
                 </div>
              </div>
            </div>

@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/hooks/useAuth';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Register() {
   const { t, i18n } = useTranslation('common');
@@ -38,12 +39,14 @@ export default function Register() {
 
   return (
     <div className="bg-off-white min-h-screen p-6 flex flex-col animate-fade-in">
-      <header className="mb-10">
+      <header className="flex justify-between items-center mb-10">
         <Link href="/" className="flex items-center gap-2 text-gray-500 font-bold hover:text-gray-900 transition-colors inline-flex">
           <ArrowLeft size={20} />
         </Link>
-        <h1 className="text-3xl font-black mt-6 tracking-tight">{t('auth.create_account')}</h1>
+        <LanguageSwitcher />
       </header>
+
+      <h1 className="text-3xl font-black mb-8 tracking-tight">{t('auth.create_account')}</h1>
 
       <form onSubmit={handleRegister} className="flex flex-col gap-6">
         <div>
@@ -55,7 +58,7 @@ export default function Register() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="w-full bg-white p-4 rounded-2xl shadow-sm border border-gray-100 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all placeholder:text-gray-300 font-medium"
-            placeholder="John Doe"
+            placeholder={t('auth.placeholders.name')}
           />
         </div>
 
@@ -68,7 +71,7 @@ export default function Register() {
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             className="w-full bg-white p-4 rounded-2xl shadow-sm border border-gray-100 focus:border-accent focus:ring-1 focus:ring-accent outline-none transition-all placeholder:text-gray-300 font-medium"
-            placeholder="080 123 4567"
+            placeholder={t('auth.placeholders.phone')}
           />
         </div>
 

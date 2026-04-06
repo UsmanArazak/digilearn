@@ -4,27 +4,49 @@
     "lang_toggle": "EN"
   },
   "hero": {
-    "welcome": "Barka da zuwa DigiLearn",
-    "subtitle": "Koyi fasahar zamani mataki-mataki cikin sauƙi.",
-    "cta": "Fara Yanzu"
+    "welcome": "Sannu ku da zuwa DigiLearn!",
+    "subtitle": "Koyi harkar na'ura mai kwakwalwa cikin sauƙi, mataki-mataki.",
+    "cta": "Maza mu fara!"
+  },
+  "landing": {
+    "choose_course": "Zaɓi darasin\nda kake so",
+    "categories": {
+      "design": "Zane-zane",
+      "programming": "Shirye-shirye"
+    },
+    "by_author": "Daga DigiLearn Team",
+    "mobile_track": "Darasin Waya",
+    "web_track": "Darasin Intanet",
+    "heading": "Koyi Fasahar Zamani Da Harshen Ka",
+    "subtitle": "Matasan Arewa, ga damar koyon ilimin na'ura kyauta ba tare da intanet ba.",
+    "tag": "Kyauta. Ba intanet. Da Hausa.",
+    "cta": "Maza mu fara!",
+    "sign_in": "Kana da asusu? Shiga nan",
+    "stats": {
+      "tracks": "Darussa 4",
+      "lessons": "Fiye da 20",
+      "languages": "Harsuna 2"
+    }
   },
   "skill_tracks": {
     "phone_basics": {
-      "title": "Fahimtar Wayoyi",
-      "description": "Koyi yadda ake amfani da wayar zamani da saita ayyuka."
+      "title": "Sanin Wayar Ka",
+      "description": "Koyi yadda zaka saita wayar ka, sanya sabbin apps, da komai."
     },
     "internet_101": {
-      "title": "Ilimin Intanet 101",
+      "title": "Ilimin Intanet",
       "description": "Fahimtar yadda ake bincike a kan yanar gizo lafiya."
     },
     "email_messaging": {
       "title": "Imel da Saƙonni",
-      "description": "Bude Imel, da amfani da WhatsApp yadda ya kamata."
+      "description": "Bude Imel, da amfani da WhatsApp da kyau."
     },
     "online_safety": {
-      "title": "Tsaro a Yanar Gizo",
-      "description": "Koyi yadda zaka kare bayanan ka daga masu damfara."
-    }
+      "title": "Kare Kanka",
+      "description": "Kare bayanan ka daga masu damfara a yanar gizo."
+    },
+    "safe_browsing": "Bincike Lafiya",
+    "duration_min": "Minti {{count}}"
   },
   "nav": {
     "home": "Gida",
@@ -32,28 +54,21 @@
     "progress": "Ci gaba",
     "profile": "Asusu"
   },
-  "landing": {
-    "heading": "Koyi Fasahar Zamani Da Harshen Ka",
-    "subtitle": "Ba wa matasan Arewa damar koyon ilimin na'ura mai kwakwalwa kyauta.",
-    "tag": "Kyauta. Ba tare da intanet ba. Da Hausa.",
-    "cta": "Fara Yanzu",
-    "sign_in": "Tana da asusu riga? Shiga nan",
-    "stats": {
-      "tracks": "Darussa 4",
-      "lessons": "Darussa 20+",
-      "languages": "Harsuna 2"
-    }
-  },
   "auth": {
     "create_account": "Bude Asusu",
     "sign_in": "Shiga Ciki",
-    "full_name": "Cikakken Suna",
+    "full_name": "Sunan Ka",
     "phone_number": "Lambar Waya",
-    "select_language": "Zaɓi Harshe",
+    "select_language": "Wanne harshe ka fi so?",
+    "no_account": "Baka da asusu?",
+    "placeholders": {
+      "name": "Misali: Usman Adamu",
+      "phone": "080 123 4567"
+    },
     "errors": {
-      "fill_all": "Da fatan za a cika dukkan bayanan",
-      "no_account": "Ba mu sami asusu da wannan lambar ba. Da fatan za a yi rajista tukuna.",
-      "welcome_back": "Barka da dawowa!"
+      "fill_all": "Dan Allah cika dukkan wuraren",
+      "no_account": "Ba mu sami asusu da wannan lambar ba. Yi rajista mana!",
+      "welcome_back": "Maraba da dawowa!"
     }
   }
 }

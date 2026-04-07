@@ -4,14 +4,12 @@ import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { Smartphone, ChevronRight, Globe } from 'lucide-react';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
-import AsiyaSurpriseGate from '@/components/AsiyaSurpriseGate';
 
 export default function LandingPage() {
   const { t } = useTranslation('common');
 
   return (
-    <AsiyaSurpriseGate>
-      <div className="bg-off-white text-gray-900 min-h-screen flex flex-col p-6 animate-fade-in overflow-x-hidden pb-32">
+    <div className="bg-off-white text-gray-900 min-h-screen flex flex-col p-6 animate-fade-in overflow-x-hidden pb-32">
         {/* Header */}
         <header className="flex justify-between items-center mb-10">
           <div className="text-xl font-black tracking-tighter flex items-center gap-2">
@@ -90,8 +88,7 @@ export default function LandingPage() {
              {t('landing.sign_in')}
           </Link>
         </div>
-      </div>
-    </AsiyaSurpriseGate>
+    </div>
   );
 }
 

@@ -274,18 +274,5 @@
         }
       }
     }
-  },
-  "surprise": {
-    "prompt": {
-      "title": "Wani sirri",
-      "label": "Rubuta sunanka",
-      "fallback": "Shin sunan ka ba Asiya ko Aseeyah ba ne?",
-      "continue": "Gaba"
-    },
-    "reveal": {
-      "kicker": "Lokacin mamaki",
-      "subtitle": "Asiya, some people inspire songs. Some inspire poetry. You inspired an entire app. Every feature, every lesson, every screen was built thinking of your smile and your spirit. Your dedication, your zeal, your hunger to be more, you inspire this more than you know. This will always be yours, whether you know it or not. Smiles 😊😊.",
-      "continue": "Gaba"
-    }
   }
 }

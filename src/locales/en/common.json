@@ -49,8 +49,57 @@
   "nav": {
     "home": "Home",
     "search": "Search",
+    "updates": "Updates",
     "progress": "Progress",
     "profile": "Profile"
+  },
+  "updates": {
+    "popup": {
+      "whats_new": "What’s New",
+      "close": "Close updates",
+      "cancel": "Cancel",
+      "next": "Next",
+      "got_it": "Got It"
+    },
+    "page": {
+      "title": "Updates",
+      "subtitle": "See what’s new and what’s coming soon."
+    },
+    "tabs": {
+      "whats_new": "What is New",
+      "coming_soon": "Coming Soon"
+    },
+    "badges": {
+      "coming_soon": "Coming Soon"
+    },
+    "items": {
+      "u1": {
+        "title": "Welcome to DigiLearn",
+        "description": "We’ve added new learning content and a smoother experience to help you learn step by step."
+      },
+      "u2": {
+        "title": "Better lessons and navigation",
+        "description": "Lessons are now easier to follow with clearer steps and improved progress tracking."
+      },
+      "u3": {
+        "title": "New: Updates System",
+        "description": "You can now see what’s new in the app and what features are coming soon."
+      }
+    },
+    "coming_soon": {
+      "c1": {
+        "title": "Offline lessons",
+        "description": "Download lessons and learn even when your data is low or the network is weak."
+      },
+      "c2": {
+        "title": "Practice quizzes",
+        "description": "Short quizzes after lessons to help you remember the most important points."
+      },
+      "c3": {
+        "title": "Certificates",
+        "description": "Earn a simple certificate after completing a full course to show your progress."
+      }
+    }
   },
   "auth": {
     "create_account": "Create Account",
@@ -281,41 +330,56 @@
       "lesson1": {
         "title": "Protecting your personal information",
         "steps": {
-          "step1": { "heading": "Know what is private", "content": "Phone number, ID details, and bank information should be kept private." },
-          "step2": { "heading": "Share less online", "content": "Only share what is needed. Too much personal posting can be risky." },
-          "step3": { "heading": "Use privacy settings", "content": "Limit who can see your profile, posts, and status updates." }
+          "step1": { "heading": "What is personal information and why is it valuable?", "content": "Personal information is any detail that can be used to identify you or find you. It includes your full name, home address, phone number, school name, date of birth, and even your photos. Think of personal information like a house key: once someone has it, they can enter places they should not enter. Online, strangers can use your details to trick you or target you. That is why you should not share personal information with people you do not know or trust. When you protect your personal information, you protect your future and your peace of mind." },
+          "step2": { "heading": "What happens when your personal information falls into the wrong hands?", "content": "When the wrong person gets your personal information, it can cause real problems. Someone can do identity theft, which means they pretend to be you to deceive other people. They can also do financial fraud, which means using your details to steal money or scam your family. Sometimes the danger can even become physical if someone uses your location or school details to find you in real life. For example, a scammer can use your name and photo to create a fake account and message your friends for money. Oversharing may look harmless, but it can open doors to serious trouble." },
+          "step3": { "heading": "What information is safe to share and what is not?", "content": "Some information is usually safe to share, like your first name, your general interests, and harmless things like your favorite football team. But some information should never be shared online, like your ATM PIN, bank details, exact home address, school location, and your daily schedule. Sharing with close friends in private is different from sharing publicly where anyone can see it. Public posts can reach strangers, and strangers do not need your private details. If you are not sure, treat it as private and don’t share. A good habit is to ask: “Would I tell this to a stranger in the street?”" },
+          "step4": { "heading": "Protecting your information on social media", "content": "Many young Nigerians post on Facebook, Instagram, and TikTok without thinking about privacy. Social media can expose your location, your photos, and your personal details if your settings are open. Go to your privacy settings and choose who can see your posts, your phone number, and your profile details. Make your account private if possible, so only people you accept can follow you. Turn off location sharing on posts, and avoid posting your school gate, house, or street sign. Check your settings regularly because apps can change their options over time. Privacy settings are like your fence; you decide who can enter." },
+          "step5": { "heading": "Being careful about online forms and sign ups", "content": "Many websites and pages will ask you to fill forms to “win prizes” or “unlock content.” Some are real, but many are traps to collect your details. Only fill forms on trusted websites you recognize, and always read what the site says it will do with your information. Never enter bank details on a site you are not completely sure about. If a form is asking for too much, like ATM PIN or BVN, close it immediately. If you need to sign up, use official apps and real websites, not random links from WhatsApp groups. When you slow down and check, you avoid regrets later." },
+          "step6": { "heading": "Your personal information is your responsibility", "content": "Online privacy is like personal safety: nobody can protect you better than you protect yourself. Once you share information online, it can be copied, forwarded, and saved by others. Even if you delete it later, it may already be in someone’s screenshot. That is why it is important to pause and think before you post or send any detail. Ask yourself if you trust the person and if you really need to share it. Build the habit of sharing less, not more. When you take ownership of your privacy, you become safer and more confident online." }
         }
       },
       "lesson2": {
         "title": "Recognizing scams and fake messages",
         "steps": {
-          "step1": { "heading": "Watch for urgent pressure", "content": "Scammers push you to act fast. Slow down and verify first." },
-          "step2": { "heading": "Check the sender", "content": "Look closely at numbers and email addresses before trusting messages." },
-          "step3": { "heading": "Do not share OTP codes", "content": "One-time password codes are private. No real support team will ask for them." }
+          "step1": { "heading": "What is a scam and how does it work?", "content": "A scam is a trick designed to steal your money, personal information, or access to your accounts. Think of a scammer like a con artist in a market who uses sweet talk and a convincing story to collect money from people. Online scams work the same way, but they come through messages, emails, and phone calls. The scammer may pretend to be a bank, a company, or even a friend. They often try to make you act quickly so you don’t think well. Once you understand how scams work, you can spot them faster and avoid them." },
+          "step2": { "heading": "Common scams targeting Nigerians", "content": "Many scams are common in Nigeria, especially online. One is “you won a prize” even though you never entered any competition, and they ask you to pay a fee. Another is a stranger abroad claiming they want to send you money but first they need your bank details. There are also fake job offers that ask for upfront payment for “training” or “processing.” Some scams pretend to be from your bank and say you must verify your account urgently. These messages can look serious, but they are usually designed to steal from you. If anyone asks for money or personal details in a strange way, be suspicious." },
+          "step3": { "heading": "How to spot a fake message or email", "content": "Scam messages often have urgency, like “Do this now or you will lose your account.” They also pressure you to act immediately so you won’t verify. Many ask for personal information, money, or secret codes like OTP. You may notice spelling mistakes, poor grammar, or messages that don’t sound professional. Fake links can look similar to real websites but with small differences in spelling. Also, promises that sound too good to be true are usually lies. When you notice these signs, stop and verify before you do anything." },
+          "step4": { "heading": "Fake websites and phishing", "content": "Phishing is when a scammer creates a fake website that looks like a real one to steal your login details. For example, they can make a fake GTBank or Access Bank login page that looks real, then ask you to enter your password. Once you type it, they collect it and can access your account. Always check the website address carefully before entering any information. Small differences like extra letters, missing dots, or strange endings are warning signs. If you are not sure, don’t log in—go to the official app or official website you already know. Phishing works because people rush, so slow down and check." },
+          "step5": { "heading": "What to do if you think you have been scammed", "content": "If you suspect a scam, stop communicating with the scammer immediately. Do not send any more money, details, or screenshots, even if they beg or threaten you. Tell a trusted adult, parent, or someone who can help you act fast. If your account details may have been exposed, change your password immediately and log out of all devices if possible. You can also report the scam to the platform where it happened and keep evidence like screenshots. For serious financial scams, you can report to the EFCC or the Nigerian Police cybercrime unit. Acting quickly can reduce the damage." },
+          "step6": { "heading": "Protecting yourself and your community from scams", "content": "Scammers often target people who don’t know these tricks, especially older relatives and new internet users. Share what you learn with your family and friends so they don’t fall into the same trap. If you see a scam message in a group, warn others calmly and advise them not to click links. Teach people simple rules like “don’t share OTP” and “verify before paying.” Awareness is one of the strongest ways to fight scams. When one person learns, many people can become safer. You are helping your community when you spread safety knowledge." }
         }
       },
       "lesson3": {
         "title": "Creating strong passwords",
         "steps": {
-          "step1": { "heading": "Use long passwords", "content": "Use at least 10 characters with mixed letters, numbers, and symbols." },
-          "step2": { "heading": "Use different passwords", "content": "Do not use one password for every app. If one leaks, others stay safe." },
-          "step3": { "heading": "Store passwords safely", "content": "Use a trusted password manager or a private notebook kept secure." }
+          "step1": { "heading": "What is a password and why does it matter?", "content": "A password is a secret combination of letters, numbers, and symbols that protects your online accounts. Think of it like the lock on your front door: if the lock is weak, thieves can enter easily. Your email, social media, and banking apps all depend on passwords to keep your information safe. If someone gets your password, they can enter your account and do things you did not allow. That is why a password must be private and strong. When you take passwords seriously, you reduce the chances of being hacked." },
+          "step2": { "heading": "What makes a password weak?", "content": "Weak passwords are easy to guess because they are common and predictable. Examples include 123456, password, your name, your phone number, or your date of birth. Many people use these because they are easy to remember, but scammers also know them first. A hacker will try the simplest and most common passwords before trying anything else. If your password is based on your personal details, it can be guessed by someone who knows you or saw your profile. Weak passwords are like a cheap padlock that can be broken quickly. Avoid them, even if they feel convenient." },
+          "step3": { "heading": "How to create a strong password", "content": "A strong password follows simple rules that make it hard to guess. It should be at least 8 characters long, but longer is even better. Mix uppercase and lowercase letters, add numbers, and include at least one symbol like ! or *. A good trick is to turn a simple phrase into a stronger password. For example, “I love Kano 2024” can become “!L0veKan02024” by changing letters and adding a symbol. Do not use a password that someone can guess by looking at you. Strong passwords protect your accounts like a strong gate protects a house." },
+          "step4": { "heading": "Using different passwords for different accounts", "content": "Using the same password everywhere is dangerous. If a scammer gets your password for one account, they will quickly try it on your email, Facebook, WhatsApp, and even your bank app. This is like using one key for every door in your house and giving it to a stranger. If one account is compromised, all your accounts can fall together. It is better to have different passwords for important accounts, especially email and banking. You can make them related but not the same, like changing small parts. Different passwords reduce the damage if one account is attacked." },
+          "step5": { "heading": "How to remember your passwords safely", "content": "It is normal to find it hard to remember many passwords. One safe option is to write them in a private notebook kept in a safe place at home, not in your phone gallery. Another option is using a trusted password manager app, which stores passwords securely behind one main password. Never save passwords on a shared phone that other people use, because someone can open your accounts easily. Avoid sending passwords to yourself on WhatsApp, because phones can be stolen. The goal is to remember them without exposing them. Safe storage is better than risky memory tricks." },
+          "step6": { "heading": "What to do if you forget or lose your password", "content": "If you forget your password, most apps have a “Forgot password” option. It usually sends a reset link to your email or a code to your phone number. That is why it is important to set a recovery email or phone number in advance. After you reset, choose a new strong password and don’t reuse the old weak one. If you suspect someone else knows your password, change it immediately even if you did not forget it. For Gmail, you can add recovery options in your Google account settings. Knowing how to reset passwords helps you recover quickly without panic." }
         }
       },
       "lesson4": {
         "title": "Safe social media use",
         "steps": {
-          "step1": { "heading": "Think before posting", "content": "Ask if this post is safe and respectful before sharing publicly." },
-          "step2": { "heading": "Control who contacts you", "content": "Use privacy controls to reduce unknown messages and harassment." },
-          "step3": { "heading": "Avoid harmful challenges", "content": "Do not join dangerous online trends just because others are doing them." }
+          "step1": { "heading": "What is social media and how popular is it in Nigeria?", "content": "Social media platforms like Facebook, Instagram, TikTok, X (formerly Twitter), and Snapchat are places where people share photos, videos, and opinions. In Nigeria, many young people use social media every day for entertainment, news, and connecting with friends. Some people also use it to promote business, sell items, and build personal brand. Because it is common, it can feel normal to share everything, but that can be risky. Social media is powerful, and power needs wisdom. When you use it well, it can open opportunities, but when you use it carelessly, it can cause problems." },
+          "step2": { "heading": "Setting up your social media privacy settings", "content": "Many social media accounts start as public, which means anyone in the world can see your profile and posts. Privacy settings help you control who can see your content and who can contact you. Set your account to private if possible, so only people you accept can follow you. Review who can see your posts, your phone number, and your profile details. Platforms also change settings over time, so check your privacy regularly. Think of privacy settings like the lock on your gate—you decide who can enter your space." },
+          "step3": { "heading": "Thinking before you post", "content": "Your digital footprint means everything you post leaves a trace that can stay online for years. Even if you delete something, someone may have taken a screenshot or saved it. Before posting, ask yourself: “Would I be okay if my parents, teacher, or future employer saw this?” This simple question can save you from regret. Avoid posting things when you are angry or emotional, because you may say something you don’t mean. Also be careful about posting other people’s photos without permission. Thinking first is a smart habit that protects your reputation." },
+          "step4": { "heading": "Dealing with cyberbullying", "content": "Cyberbullying is when someone uses the internet to hurt or embarrass another person. It can be insulting messages, spreading rumors, sharing embarrassing photos, or excluding someone from groups on purpose. It hurts like physical bullying, and it can affect your confidence and mental health. If someone bullies you online, don’t fight them back; save evidence like screenshots and block them. Tell a trusted adult, teacher, or parent so you don’t carry the burden alone. If you see someone being bullied, support them and report the bully. A safe online community starts with people who choose kindness." },
+          "step5": { "heading": "Fake news and misinformation on social media", "content": "Social media spreads information fast, but not all information is true. Fake news can spread quickly on WhatsApp and Facebook because people forward without checking. Before you share news, verify it from trusted sources like BBC Hausa, Channels TV, or NAN. Look for official pages and multiple sources that say the same thing. Be careful of shocking headlines that try to scare you, because that is how fake news gets attention. Sharing fake news can cause panic and harm people. A wise person checks first, then shares." },
+          "step6": { "heading": "Using social media positively and responsibly", "content": "Social media can be used for good when you choose the right content and people. You can join positive communities, learn skills, and follow pages that teach you something valuable. Share your talents, your business, or your ideas in a respectful way. Remember that you control what you post and who you interact with. If a page or person makes you feel unsafe, unfollow, block, or report them. Responsible use can bring real opportunities in education and career. When you use social media with sense, it becomes a tool for progress, not stress." }
         }
       },
       "lesson5": {
         "title": "What to do if something goes wrong",
         "steps": {
-          "step1": { "heading": "Act quickly", "content": "Change password immediately if you think your account was accessed." },
-          "step2": { "heading": "Ask for trusted help", "content": "Contact a trusted friend, family member, or official support channel." },
-          "step3": { "heading": "Report and recover", "content": "Use report tools in the app and follow recovery steps to secure your account." }
+          "step1": { "heading": "Mistakes happen, and it is okay to ask for help", "content": "Everyone who uses the internet makes mistakes sometimes, and that is normal. You might click a suspicious link, share something private by mistake, or even fall for a scam. The most important thing is not to panic and not to hide what happened. Taking action quickly is better than waiting and hoping it goes away. Asking for help is a sign of strength, not weakness. When you speak to a trusted person early, you can solve the problem faster." },
+          "step2": { "heading": "Your phone or account has been hacked", "content": "Hacking means someone got access to your account without your permission. Signs include seeing messages you did not send, being logged out suddenly, or receiving alerts about logins from unknown places. Sometimes your friends may tell you they got strange messages from you. If you suspect hacking, change your password immediately and choose a stronger one. If the app allows it, log out of all devices so the hacker is kicked out. Also check your recovery phone number and email to make sure the hacker didn’t change them. Acting fast can stop more damage." },
+          "step3": { "heading": "You accidentally shared personal information", "content": "If you realize you shared personal details with the wrong person, stop communicating with them immediately. Do not send more information, and don’t try to “explain” too much to them. Tell a trusted adult, parent, or teacher so you can think clearly and take the right steps. If it happened on social media, report the account and change your privacy settings quickly. If you shared passwords or codes, change them immediately and warn your bank or service provider if needed. The earlier you act, the safer you become." },
+          "step4": { "heading": "You received threatening or inappropriate content", "content": "If someone sends you threats, inappropriate images, or messages that make you feel unsafe, do not respond. Replying can encourage the person to continue or escalate. Take screenshots as evidence and block the person on the platform. Use the report feature inside the app so the platform can take action. Then tell a trusted adult or someone who can support you, especially if the threats feel serious. You deserve to feel safe online, and reporting is not “snitching”—it is protection. Keep evidence so you can explain clearly if you need help." },
+          "step5": { "heading": "Reporting cybercrime in Nigeria", "content": "Reporting is important because it can protect you and also protect other people. In Nigeria, the EFCC handles many financial fraud cases, and there is also the Nigerian Police cybercrime unit. You can also report directly inside apps like WhatsApp, Facebook, Instagram, and Gmail using their report buttons. If money is involved, keep all evidence like screenshots, account numbers, and chat messages. Do not feel ashamed to report; scammers succeed when people stay silent. Reporting helps authorities track patterns and stop criminals. Even if you are not sure, asking for help is better than staying quiet." },
+          "step6": { "heading": "Building resilience and staying safe going forward", "content": "Online safety is a skill, and like any skill, you get better with practice. The internet is powerful and can help you learn, connect, and find opportunities, but it also requires wisdom. When something goes wrong, learn from it and move forward stronger. Share what you learn with friends and family so everyone becomes safer. Keep improving your passwords, privacy settings, and your ability to spot scams. DigiLearn is here to guide you step by step, so you don’t have to figure it out alone. With the right habits, you can use the digital world with confidence." }
         }
       }
     }

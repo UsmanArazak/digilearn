@@ -49,8 +49,57 @@
   "nav": {
     "home": "Gida",
     "search": "Bincika",
+    "updates": "Sabuntawa",
     "progress": "Ci gaba",
     "profile": "Asusu"
+  },
+  "updates": {
+    "popup": {
+      "whats_new": "Me ya sabo?",
+      "close": "Rufe sabuntawa",
+      "cancel": "Bar shi",
+      "next": "Na gaba",
+      "got_it": "Na gane"
+    },
+    "page": {
+      "title": "Sabuntawa",
+      "subtitle": "Ka ga abin da ya sabo, da abin da ke tafe nan gaba."
+    },
+    "tabs": {
+      "whats_new": "Me ya sabo",
+      "coming_soon": "Na Tafe (Coming Soon)"
+    },
+    "badges": {
+      "coming_soon": "Coming Soon"
+    },
+    "items": {
+      "u1": {
+        "title": "Maraba da DigiLearn",
+        "description": "Mun kara wasu sabbin abubuwan koyo, kuma mun sa amfani da app ya fi sauki mataki-mataki."
+      },
+      "u2": {
+        "title": "Darussa sun fi kyau, kewayawa ta fi sauki",
+        "description": "Yanzu darussa sun fi tsari da matakai masu bayyana, sannan bibiyar ci gaba ta inganta."
+      },
+      "u3": {
+        "title": "Sabo: Updates System",
+        "description": "Yanzu zaka iya ganin abin da ya sabo a app, da abubuwan da suke zuwa nan gaba."
+      }
+    },
+    "coming_soon": {
+      "c1": {
+        "title": "Darussa ba tare da intanet ba",
+        "description": "Zaka iya sauke darussa ka yi koyo ko data ta yi kasa ko network ya yi rauni."
+      },
+      "c2": {
+        "title": "Tambayoyin gwaji (quizzes)",
+        "description": "Gajerun tambayoyi bayan darasi domin su taimaka maka ka tuna muhimman abubuwa."
+      },
+      "c3": {
+        "title": "Takardar shaidar kammalawa",
+        "description": "Idan ka kammala cikakken kwas, zaka samu certificate mai sauki da zai nuna ci gaban ka."
+      }
+    }
   },
   "auth": {
     "create_account": "Bude Asusu",
@@ -281,41 +330,56 @@
       "lesson1": {
         "title": "Kare bayanan sirri",
         "steps": {
-          "step1": { "heading": "San abin da ya kamata ya zama sirri", "content": "Lambar waya, katin banki, da bayanan shaida su zama sirri." },
-          "step2": { "heading": "Rage yawan bayanin da kake rabawa", "content": "Ka raba bayanin da ya zama dole kawai a yanar gizo." },
-          "step3": { "heading": "Yi amfani da privacy settings", "content": "Kayyade wanda zai ga posts da bayananka." }
+          "step1": { "heading": "Menene personal information, kuma me ya sa take da daraja?", "content": "Personal information ita ce duk wani bayani da zai iya nuna kai waye ko a iya gano ka. Wannan ya hada da cikakken suna, adireshin gida, lambar waya, sunan makaranta, ranar haihuwa, da hotuna. Ka dauke personal information kamar mabuɗin gida: ba ka bayar da mabuɗin gida ga baƙo a titi. Haka ma a intanet, ba ka raba wadannan bayanai da wanda ba ka sani ko ba ka yarda da shi ba. Idan ka kare bayananka, ka kare kanka da makomarka. Tsaro yana farawa da sanin abin da ya kamata ya zama sirri." },
+          "step2": { "heading": "Me ke faruwa idan bayananka ya shiga hannun mara kyau?", "content": "Idan bayananka ya shiga hannun wanda ba shi da kyau, zai iya jawo matsala ta gaske. Za su iya yin identity theft, wato su yi pretending su zama kai domin yaudarar mutane. Za su iya yin financial fraud, wato su yi amfani da bayananka su sace kudi ko su damfari iyalanka. Wani lokaci ma zai iya zama hadari a zahiri idan suka samu inda kake ko makarantar ka. Misali, za su iya daukar hotonka su bude fake account su rika neman kudi a sunanka. Abin da ya fara kamar wasa na iya zama babban matsala idan ba a yi hankali ba." },
+          "step3": { "heading": "Wane bayani ya dace a raba, wane kuma a’a?", "content": "Akwai bayanai da yawanci ba su da matsala, kamar first name, abubuwan da kake so, ko kungiyar kwallon da kake bi. Amma akwai bayanai da bai kamata ka taba rabawa ba, kamar ATM PIN, bank details, ainihin adireshin gida, wurin makaranta, da jadawalin yawo na kullum. Raba bayani da aboki na kusa a private ba daidai yake da wallafa shi a public ba. Public na nufin kowa zai iya gani, har baƙi ma. Idan ka yi shakka, ka dauke shi sirri ka bar shi. Ka tambayi kanka: “Zan fada wa baƙo a titi wannan?”" },
+          "step4": { "heading": "Kare bayananka a social media", "content": "Yawancin matasan Najeriya suna wallafa abubuwa a Facebook, Instagram, da TikTok ba tare da tunani ba. Social media na iya nuna location, hotuna, da bayanan ka idan settings a bude yake. Ka shiga privacy settings ka zabi wanda zai ga posts, lambar waya, da details na profile. Ka sa account dinka ya zama private idan yana yiwuwa, domin sai wanda ka amince zai biyo ka. Ka kashe location sharing a posts, kuma ka guji nuna kofar makaranta ko unguwarka a fili. Ka rika duba settings lokaci-lokaci, domin apps na canza zabuka. Privacy settings kamar katangar gida ce—kai ne kake zabar wanda zai shiga." },
+          "step5": { "heading": "Hankali wajen forms da sign up", "content": "Wasu websites suna sa ka cike form domin “kyauta” ko “unlock content,” amma ba duka gaskiya ba ne. Wasu dai dabara ce don su tara bayananka. Ka cike form ne kawai a shafi mai amincewa da ka sani, kuma ka karanta abin da shafin ya ce zai yi da bayananka. Kada ka taba saka bank details a shafi da ba ka da tabbaci a kansa. Idan form ya fara tambayar BVN ko ATM PIN, ka rufe shi nan take. Ka guji random links daga WhatsApp groups; ka fi amfani da apps na hukuma da official websites. Idan ka yi hankali, ba za ka yi nadama ba daga baya." },
+          "step6": { "heading": "Bayanan ka alhakin ka ne", "content": "Sirrin ka a intanet kamar tsaro ne a rayuwa: kai ne ya fi iya kare kanka. Da zarar ka raba bayani online, ana iya copy, forward, ko a dauki screenshot. Ko da ka goge shi daga baya, yana iya riga ya shiga hannun wani. Shi ya sa ya dace ka tsaya ka yi tunani kafin ka tura ko ka wallafa wani bayani. Ka tambayi kanka ko kana yarda da mutumin, kuma ko dole ne ka raba shi. Ka gina dabi’ar raba kadan, ba yawa ba. Idan ka dauki alhakin sirrinka, zaka kara tsaro da kwarin gwiwa." }
         }
       },
       "lesson2": {
         "title": "Gane damfara da sakonnin karya",
         "steps": {
-          "step1": { "heading": "Ka lura da matsin lamba", "content": "Masu damfara na son ka yi gaggawa. Tsaya ka tantance." },
-          "step2": { "heading": "Duba mai aikowa", "content": "Ka duba lamba ko adireshin email kafin ka yarda." },
-          "step3": { "heading": "Kada ka bada OTP", "content": "Lambar OTP sirri ce. Babu hukuma ta gaske da za ta tambaye ka ita." }
+          "step1": { "heading": "Menene scam, kuma yaya yake aiki?", "content": "Scam yaudara ce da ake yi domin a sace kudi, bayanan sirri, ko a kwace account dinka. Ka dauke scammer kamar mai damfara a kasuwa da ke yin labari mai dadi domin ya karbi kudin mutane. A intanet, wannan yaudara na zuwa ta sakonni, email, ko kira. Sau da yawa suna pretending su zama banki, kamfani, ko aboki. Suna yawan matsa ka ka yi gaggawa domin kada ka samu lokacin tunani. Idan ka fahimci yadda scams ke aiki, zaka iya gane su da wuri. Hankali da tantancewa suna taimaka sosai." },
+          "step2": { "heading": "Scams da suka fi shahara a Najeriya", "content": "Akwai scams da dama da matasa ke fuskanta a Najeriya. Wasu suna cewa ka ci kyauta alhali ba ka shiga komai ba, sai su ce ka biya fee. Wasu baƙo a waje ya ce zai turo maka kudi, amma sai ya nemi bank details da farko. Akwai fake job offers da ke neman ka biya kudi kafin “training” ko “processing.” Wasu kuma sakonni ne kamar daga banki suna cewa ka tabbatar da account dinka cikin gaggawa. Wadannan sakonni na iya yin kama da na gaske, amma manufarsu satar kudi ce. Idan aka nemi kudi ko sirri ta hanyar da ba ta da kyau, ka yi shakku." },
+          "step3": { "heading": "Yadda zaka gane fake message ko email", "content": "Sakon damfara yawanci yana da gaggawa, kamar “yi yanzu ko account dinka zai rufe.” Suna matsa ka ka yi sauri domin kada ka tantance. Yawanci suna neman bayanan sirri, kudi, ko codes kamar OTP. Zaka iya ganin kuskuren rubutu ko grammar mara kyau, ko kuma sakon da bai yi professional ba. Links na iya kama da na gaske, amma spelling ya dan bambanta kadan. Idan sakon ya yi dadi fiye da kima, yawanci karya ne. Idan ka ga wadannan alamu, ka tsaya ka tabbatar kafin ka yi komai." },
+          "step4": { "heading": "Fake websites da phishing", "content": "Phishing na nufin scammer ya kirkiri fake website da ya yi kama da na gaske domin ya sace login details. Misali, zai iya yin fake shafin GTBank ko Access Bank ya ce ka shiga ka saka password. Da zarar ka rubuta, su ne zasu karba su shiga account dinka. Kullum ka duba adireshin website sosai kafin ka saka wani bayani. Ƙananan bambanci kamar karin harafi ko wani ending mai ban mamaki alama ce ta hadari. Idan baka da tabbaci, ka yi amfani da official app ko official website da ka sani. Phishing na aiki ne idan mutum ya yi gaggawa, don haka ka rika yin hankali." },
+          "step5": { "heading": "Me za ka yi idan ka yi zargin an damfare ka?", "content": "Idan ka yi zargin scam, ka daina magana da scammer nan take. Kada ka sake tura kudi, bayanai, ko screenshots ko da sun yi barazana. Ka sanar da babba ko wanda ka yarda da shi domin ku dauki mataki da wuri. Idan ka ba da bayanan account, ka canza password nan take, kuma idan yana yiwuwa ka logout daga duk devices. Ka rike shaida kamar screenshots domin report. Idan kudi ya shiga ciki, zaka iya kai rahoto EFCC ko Police cybercrime unit. Yin gaggawa na iya rage asara." },
+          "step6": { "heading": "Kare kai da al’umma daga scams", "content": "Scammers suna fi kai hari ga masu rashin sani, musamman manya ko sabbin masu intanet. Ka raba abin da ka koya da iyaye, dangi, da abokai domin su ma su kare kansu. Idan ka ga scam message a group, ka yi gargadi cikin ladabi ka ce kada su danna links. Ka koya musu dokoki kamar “kada ka bada OTP” da “ka tabbatar kafin ka biya.” Wayar da kai ita ce babbar makami wajen yaki da damfara. Idan mutum daya ya koyi tsaro, mutane da yawa za su amfana. Kana taimaka wa kowa idan ka yada sani." }
         }
       },
       "lesson3": {
         "title": "Kirkirar kalmar sirri mai karfi",
         "steps": {
-          "step1": { "heading": "Yi doguwar kalmar sirri", "content": "Ka yi kalmar sirri mai haruffa da lambobi akalla 10." },
-          "step2": { "heading": "Ka bambanta kalmomin sirri", "content": "Kada ka yi kalmar sirri daya ga dukkan apps." },
-          "step3": { "heading": "Ajiye su cikin aminci", "content": "Yi amfani da password manager ko rubutu mai sirri da aka kiyaye." }
+          "step1": { "heading": "Menene password, kuma me ya sa yake da muhimmanci?", "content": "Password makulli ne na sirri da ke kare accounts dinka a intanet. Ka dauke shi kamar kullen kofar gida: kulle mai rauni yana da saukin karya, amma mai karfi yana hana barawo. Email, social media, da banking apps duk suna dogara da password domin kare bayananka. Idan wani ya samu password, zai iya shiga account ya yi abin da ba ka yarda ba. Shi ya sa password ya zama sirri kuma ya zama mai karfi. Idan ka rike passwords da muhimmanci, zaka rage yiwuwar hacking." },
+          "step2": { "heading": "Me ke sa password ya zama rauni?", "content": "Password mai rauni yana da saukin hasashe saboda yana da yawan amfani kuma yana da saukin tunani. Misalai su ne 123456, password, sunanka, lambar waya, ko ranar haihuwa. Mutane suna amfani da su domin suna da saukin tunawa, amma scammers su ma suna fara gwada su. Hacker zai gwada mafi sauki da mafi shahara kafin ya yi wani abu. Idan password dinka ya dogara da bayananka, wanda ya san ka ko ya ga profile dinka zai iya hasashe. Password mai rauni kamar kulle na arha ne da ake iya karya da wuri. Ka guji su ko da suna da sauki." },
+          "step3": { "heading": "Yadda ake kirkirar password mai karfi", "content": "Password mai karfi yana bin dokoki masu sauki da ke sa ya zama da wuya a hasashe. Ya kamata ya zama akalla characters 8, amma idan ya fi haka ya fi kyau. Ka hada manyan haruffa da kanana, ka saka lambobi, ka kuma saka alama kamar ! ko *. Hanya mai kyau ita ce ka canza jimla mai sauki ta zama mai karfi. Misali “I love Kano 2024” zai iya zama “!L0veKan02024” ta hanyar canza wasu haruffa da saka alama. Kada ka yi password da mutum zai iya hasashe ta kallon ka. Password mai karfi kamar gate mai karfi ne." },
+          "step4": { "heading": "Amfani da passwords daban-daban ga accounts", "content": "Yin password daya a ko’ina hadari ne. Idan scammer ya samu password na account daya, zai gwada shi a Gmail, Facebook, WhatsApp, har ma bank app. Wannan kamar ka yi key daya ga duk kofofin gida ka ba baƙo. Idan account daya ya fadi, sauran na iya faduwa duka. Ya fi kyau ka yi passwords daban-daban ga muhimman accounts, musamman email da bank. Zaka iya sa su yi kama, amma kada su zama daya. Idan ka raba passwords, ka rage asara idan wani ya samu daya." },
+          "step5": { "heading": "Yadda zaka tuna passwords cikin aminci", "content": "Gaskiya tuna passwords da yawa yana da wahala, wannan normal ne. Zaka iya rubuta su a littafi na sirri ka ajiye shi a gida a wuri mai tsaro, ba a gallery na waya ba. Zaka iya amfani da password manager mai amincewa, wato app da ke rike passwords cikin tsaro da password guda daya. Kada ka ajiye passwords a wayar da ake rabawa, domin wani zai iya shiga accounts dinka. Ka guji tura passwords a WhatsApp ko SMS domin waya na iya bacewa. Manufa ita ce ka rike su yadda ba za su zube ba." },
+          "step6": { "heading": "Me za ka yi idan ka manta password?", "content": "Idan ka manta password, yawancin apps suna da “Forgot password” option. Yawanci zai turo reset link zuwa email dinka ko code zuwa lambar wayarka. Shi ya sa recovery email ko phone number yana da muhimmanci tun kafin matsala ta faru. Bayan ka reset, ka zabi sabon password mai karfi, kada ka koma tsohon mai rauni. Idan kana zargin wani ya san password dinka, ka canza shi nan da nan ko da ba ka manta ba. A Gmail, zaka iya saka recovery options a Google account settings. Sanin reset yana taimaka maka ka dawo da account ba tare da firgita ba." }
         }
       },
       "lesson4": {
         "title": "Amfani da social media cikin aminci",
         "steps": {
-          "step1": { "heading": "Ka yi tunani kafin ka wallafa", "content": "Ka tambayi kanka ko post din zai kawo matsala kafin ka tura." },
-          "step2": { "heading": "Sarrafi wanda zai iya tuntubarka", "content": "Yi amfani da privacy controls domin rage sakonnin da ba a so." },
-          "step3": { "heading": "Guji hatsarin online trends", "content": "Kada ka bi kalubale masu hatsari saboda kawai wasu na yi." }
+          "step1": { "heading": "Menene social media, kuma yaya shahararta take a Najeriya?", "content": "Social media kamar Facebook, Instagram, TikTok, X (da aka kira Twitter a baya), da Snapchat wurare ne da mutane ke wallafa hotuna, bidiyo, da ra’ayi. A Najeriya, matasa da yawa suna amfani da su kullum domin nishadi, labarai, da sadarwa da abokai. Wasu kuma suna amfani da su wajen kasuwanci da tallata kaya ko kwarewa. Saboda kowa na amfani, yana iya zama kamar komai ba matsala ba ne, amma akwai hadari idan aka yi sakaci. Social media tana da karfi, kuma karfi na bukatar hikima. Idan ka yi amfani da ita da kyau, zata iya bude maka dama, amma idan ka yi sakaci, zata iya jawo matsala." },
+          "step2": { "heading": "Saita privacy settings na social media", "content": "Da yawa accounts suna fara zama public, ma’ana kowa a duniya zai iya ganin profile dinka da posts. Privacy settings na baka damar sarrafa wanda zai gani da wanda zai tuntube ka. Ka sa account dinka private idan yana yiwuwa domin sai wadanda ka amince su bi ka. Ka duba wanda zai iya ganin posts, lambar waya, da bayanan profile. Platforms suna canza settings lokaci-lokaci, don haka ka rika duba privacy akai-akai. Ka dauke privacy settings kamar kullen gate—kai ne kake zabar wanda zai shiga. Idan ka gyara su da kyau, zaka rage damuwa sosai." },
+          "step3": { "heading": "Ka yi tunani kafin ka wallafa", "content": "Digital footprint na nufin duk abin da ka wallafa yana barin trace da zai iya zama online na tsawon lokaci. Ko da ka goge post, wani na iya riga ya yi screenshot ko ya ajiye. Kafin ka wallafa, ka tambayi kanka: “Zan ji dadi idan iyayena, malamai, ko mai daukar aiki ya gani?” Wannan tambaya na iya kare ka daga nadama. Ka guji wallafa abu lokacin da ka yi fushi ko ka damu, domin kana iya rubuta abin da ba ka nufi ba. Ka kuma girmama mutane—kada ka wallafa hoton wani ba tare da izini ba. Tunani kafin wallafawa alama ce ta wayewa." },
+          "step4": { "heading": "Yadda ake magance cyberbullying", "content": "Cyberbullying na nufin cutar da mutum ta intanet, kamar zagi, yada jita-jita, ko wallafa hoto mai kunyatarwa ba tare da izini ba. Haka kuma yana iya zama cire mutum da gangan daga groups ko tura sakonni masu ciwo. Yana cutarwa kamar bullying na zahiri, kuma yana iya shafar kwarin gwiwa. Idan wani yana bully dinka, kada ka yi fada da shi; ka ajiye shaida kamar screenshots, sannan ka block. Ka sanar da babba ko malami ko iyaye domin ka samu taimako. Idan ka ga ana bully wani, ka taimaka ka yi report, kada ka yi shiru. Al’umma mai kyau online tana farawa da tausayi." },
+          "step5": { "heading": "Fake news da misinformation a social media", "content": "Social media na yada labari cikin sauri, amma ba duk labari gaskiya ba ne. Fake news na yaduwa sosai a WhatsApp da Facebook saboda mutane na forward ba tare da tantancewa ba. Kafin ka raba labari, ka tabbatar daga shafuka masu amincewa kamar BBC Hausa, Channels TV, ko NAN. Ka duba ko akwai shaidar cewa wasu tushe ma suna fadin haka. Ka yi hankali da headlines masu tsoratarwa ko masu “shock,” domin yawanci haka ake jan hankali. Raba karya na iya jawo tashin hankali ko cutarwa. Mai hikima yana tantancewa kafin ya yada." },
+          "step6": { "heading": "Amfani da social media cikin kyau da alhaki", "content": "Social media na iya zama alheri idan ka zabi abinda kake bi da kyau. Zaka iya shiga communities masu kyau, ka koyi sabbin abubuwa, ka bi pages na ilimi. Ka iya nuna kwarewarka ko kasuwancinka cikin ladabi da tsari. Ka tuna kai ne kake sarrafa abin da kake wallafa da wanda kake mu’amala da shi. Idan wani page ko mutum yana kawo maka tsoro ko damuwa, unfollow, block, ko report. Amfani mai alhaki na iya bude dama a karatu da aiki. Idan ka yi amfani da social media da hankali, zata zama kayan ci gaba, ba damuwa ba." }
         }
       },
       "lesson5": {
         "title": "Me za ka yi idan matsala ta faru",
         "steps": {
-          "step1": { "heading": "Yi gaggawar gyara", "content": "Canza kalmar sirri nan da nan idan ka ga an shiga asusunka ba tare da izini ba." },
-          "step2": { "heading": "Nemi taimako daga wanda ka yarda", "content": "Tuntuɓi dangi, aboki, ko support na hukuma." },
-          "step3": { "heading": "Yi report sannan ka dawo da asusu", "content": "Yi report a app kuma ka bi matakan dawo da asusu cikin tsaro." }
+          "step1": { "heading": "Kuskure na faruwa, kuma ba laifi ka nemi taimako", "content": "Kowa da ke amfani da intanet yana iya yin kuskure wani lokaci, kuma wannan normal ne. Kana iya danna link mai shakku, ka raba sirri ba da gangan ba, ko ka fada tarkon scam. Abu mafi muhimmanci shi ne kada ka firgita kuma kada ka boye abin da ya faru. Idan ka dauki mataki da wuri, matsala zata ragu. Neman taimako ba rauni ba ne; alama ce ta wayewa. Idan ka sanar da wanda ka yarda da shi da wuri, za ku warware matsalar da sauri." },
+          "step2": { "heading": "Wayarka ko account dinka an yi hacking", "content": "Hacking na nufin wani ya shiga account dinka ba tare da izininka ba. Alamomi sun hada da sakonni da ba kai ka tura ba, an fitar da kai daga account, ko alerts na login daga wuri da ba ka sani ba. Wani lokaci abokai za su ce sun karbi sakon ban mamaki daga gare ka. Idan ka yi zargin hacking, ka canza password nan da nan ka sa mai karfi. Idan app na bada dama, ka logout daga duk devices domin ka kore hacker. Ka duba recovery email da phone number domin tabbatar ba su canza ba. Yin gaggawa na iya hana mummunar barna." },
+          "step3": { "heading": "Ka raba personal information ba da gangan ba", "content": "Idan ka gane ka raba sirri ga wanda bai dace ba, ka dakatar da magana da shi nan take. Kada ka kara tura wani bayani, kuma kada ka yi kokarin “bayani” da yawa. Ka sanar da babba ko wanda ka yarda da shi domin ku dauki matakin da ya dace. Idan a social media ne, ka yi report na account, ka kuma canza privacy settings da sauri. Idan ka raba password ko codes, ka canza su nan da nan, kuma idan bank ne ya shafa, ka tuntuɓi banki. Idan ka yi gaggawa, tsaro zai karu." },
+          "step4": { "heading": "An turo maka barazana ko abubuwan rashin kunya", "content": "Idan wani ya turo maka barazana, hotuna marasa kyau, ko sakonni da suka sa ka ji tsoro, kada ka amsa. Amsawa na iya kara musu karfin gwiwa su ci gaba. Ka dauki screenshots a matsayin shaida, sannan ka block mutumin. Ka yi amfani da report a cikin app domin platform ta dauki mataki. Sai ka sanar da babba, malami, ko iyaye, musamman idan barazanar ta yi tsanani. Kai ma kana da hakkin ka ji lafiya a intanet. Report ba “snitching” ba ne; kariya ce." },
+          "step5": { "heading": "Yadda ake report cybercrime a Najeriya", "content": "Report yana da muhimmanci domin yana kare ka kuma yana kare wasu. A Najeriya, EFCC na kula da yawancin financial fraud, sannan akwai Police cybercrime unit. Haka kuma apps kamar WhatsApp, Facebook, Instagram, da Gmail suna da report buttons a ciki. Idan kudi ya shiga ciki, ka ajiye shaida kamar screenshots, account numbers, da chat messages. Kada ka ji kunya ka yi report; scammers suna cin nasara idan mutane sun yi shiru. Report na taimaka wa hukuma su gano masu laifi. Ko da ba ka da tabbaci, tambaya da neman taimako ya fi zama lafiya." },
+          "step6": { "heading": "Kara karfi da tsaro a gaba", "content": "Tsaron intanet kwarewa ce, kuma kamar kowace kwarewa, tana kara kyau da atisaye. Intanet na da karfi kuma na iya taimaka maka ka koyi abubuwa da samun dama, amma yana bukatar hikima. Idan wani abu ya faru, ka koyi darasi ka ci gaba da karfi. Ka raba ilimin da ka koya da abokai da dangi domin su ma su zama lafiya. Ka rika inganta passwords, privacy settings, da kwarewar gane scams. DigiLearn na nan don ya taimaka maka mataki-mataki. Da dabi’u masu kyau, zaka yi amfani da duniya ta intanet cikin kwarin gwiwa." }
         }
       }
     }

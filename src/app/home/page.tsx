@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import Header from '@/components/Header';
 import BottomNav from '@/components/BottomNav';
 import SkillTrackCard from '@/components/SkillTrackCard';
+import UpdatesPopup from '@/components/UpdatesPopup';
 import { Smartphone, Globe, Mail, ShieldCheck } from 'lucide-react';
 import { AuthGuard } from '@/components/AuthGuard';
 import { useAuth } from '@/hooks/useAuth';
@@ -25,6 +26,7 @@ export default function Home() {
     <AuthGuard>
       <div className="bg-off-white min-h-screen flex flex-col">
         <Header />
+        <UpdatesPopup />
         
         <main className="flex-1 px-4 pb-28">
           {/* ... */}

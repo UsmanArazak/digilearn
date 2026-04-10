@@ -41,6 +41,11 @@ Defined in `tailwind.config.ts`:
   - Full-screen guided reading flow with top progress bar
   - Large centered icon + bold heading + simple explanatory paragraph per step
   - Bottom paired actions: muted Back + accent Next/Complete
+- Updates (`src/components/UpdatesPopup.tsx`, `src/app/updates/page.tsx`):
+  - First-launch modal overlay with dark scrim (`bg-black/50`) and premium white card (`rounded-3xl`, soft shadow)
+  - Version pill + bold title + short description; dot indicator for multi-item carousel
+  - Bottom paired actions: muted Cancel + accent Next/Got It
+  - Updates page uses top two-tab switcher with active accent underline/chip and stacked white cards
 
 ## Motion
 - Keep animations subtle and purposeful

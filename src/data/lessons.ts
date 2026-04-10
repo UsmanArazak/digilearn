@@ -56,10 +56,10 @@ export const LESSONS_BY_COURSE: Record<CourseId, Lesson[]> = {
   ],
   internet_101: [
     lesson('internet_101', 1, 10, [Globe, Users, Wifi, MessageSquare, ShieldCheck, LifeBuoy]),
-    lesson('internet_101', 2, 4, [Wifi, Smartphone, AlertTriangle]),
-    lesson('internet_101', 3, 4, [Globe, Search, MessageSquare]),
-    lesson('internet_101', 4, 5, [Search, ShieldCheck, AlertTriangle]),
-    lesson('internet_101', 5, 4, [Lock, Globe, KeyRound]),
+    lesson('internet_101', 2, 10, [Wifi, Smartphone, Globe, Lock, Search, ShieldCheck]),
+    lesson('internet_101', 3, 10, [Globe, Search, Lock, MessageSquare, KeyRound, ShieldCheck]),
+    lesson('internet_101', 4, 10, [Search, Users, Globe, ShieldCheck, AlertTriangle, Smartphone]),
+    lesson('internet_101', 5, 10, [ShieldCheck, Lock, AlertTriangle, Globe, LifeBuoy, KeyRound]),
   ],
   email_messaging: [
     lesson('email_messaging', 1, 4, [Mail, Send, MessageSquare]),

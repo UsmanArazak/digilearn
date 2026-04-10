@@ -48,11 +48,11 @@ const lesson = (courseId: CourseId, lessonNumber: number, readTimeMin: number, i
 
 export const LESSONS_BY_COURSE: Record<CourseId, Lesson[]> = {
   phone_basics: [
-    lesson('phone_basics', 1, 4, [Smartphone, Search, ShieldCheck]),
-    lesson('phone_basics', 2, 4, [PhoneCall, MessageSquare, Users]),
-    lesson('phone_basics', 3, 4, [MessageSquare, Send, AlertTriangle]),
-    lesson('phone_basics', 4, 5, [Download, Search, Lock]),
-    lesson('phone_basics', 5, 4, [BatteryCharging, Download, Search]),
+    lesson('phone_basics', 1, 12, [Smartphone, BatteryCharging, MessageSquare, Search, Lock, ShieldCheck]),
+    lesson('phone_basics', 2, 12, [PhoneCall, Smartphone, Users, UserPlus, Search, ShieldCheck]),
+    lesson('phone_basics', 3, 12, [MessageSquare, Smartphone, Send, MessageCircle, ShieldCheck, AlertTriangle]),
+    lesson('phone_basics', 4, 12, [Download, Search, ShieldCheck, Smartphone, Lock, AlertTriangle]),
+    lesson('phone_basics', 5, 12, [BatteryCharging, Download, ShieldCheck, Smartphone, Search, Globe]),
   ],
   internet_101: [
     lesson('internet_101', 1, 10, [Globe, Users, Wifi, MessageSquare, ShieldCheck, LifeBuoy]),

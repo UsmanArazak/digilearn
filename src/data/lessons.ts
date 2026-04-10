@@ -55,7 +55,7 @@ export const LESSONS_BY_COURSE: Record<CourseId, Lesson[]> = {
     lesson('phone_basics', 5, 4, [BatteryCharging, Download, Search]),
   ],
   internet_101: [
-    lesson('internet_101', 1, 4, [Globe, Users, Search]),
+    lesson('internet_101', 1, 10, [Globe, Users, Wifi, MessageSquare, ShieldCheck, LifeBuoy]),
     lesson('internet_101', 2, 4, [Wifi, Smartphone, AlertTriangle]),
     lesson('internet_101', 3, 4, [Globe, Search, MessageSquare]),
     lesson('internet_101', 4, 5, [Search, ShieldCheck, AlertTriangle]),

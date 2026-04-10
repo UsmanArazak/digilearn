@@ -8,6 +8,7 @@ import { ArrowLeft, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react
 import { AuthGuard } from '@/components/AuthGuard';
 import { useAuth } from '@/hooks/useAuth';
 import { COURSE_IDS, LESSONS_BY_COURSE, PROGRESS_STORAGE_KEY, type CourseId, type ProgressMap } from '@/data/lessons';
+import { updateStreakForToday } from '@/utils/streak';
 
 interface LessonPlayerPageProps {
   params: {
@@ -64,6 +65,7 @@ export default function LessonPlayerPage({ params }: LessonPlayerPageProps) {
     const deduped = Array.from(new Set([...courseProgress, lessonIndex])).sort((a, b) => a - b);
     const nextProgress: ProgressMap = { ...progressState, [courseId]: deduped };
     localStorage.setItem(PROGRESS_STORAGE_KEY, JSON.stringify(nextProgress));
+    window.dispatchEvent(new Event('digilearn_progress_updated'));
   };
 
   const handleBackStep = () => setStepIndex((prev) => Math.max(0, prev - 1));
@@ -71,6 +73,8 @@ export default function LessonPlayerPage({ params }: LessonPlayerPageProps) {
 
   const handleComplete = () => {
     saveLessonComplete();
+    updateStreakForToday();
+    window.dispatchEvent(new Event('digilearn_streak_updated'));
     setIsCompleteScreen(true);
   };
 

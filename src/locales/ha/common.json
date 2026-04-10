@@ -92,6 +92,35 @@
       "description": "Ba da dadewa ba zaka iya amfani da DigiLearn ba tare da intanet kwata-kwata ba. Ka sauke kwasa sau daya, sannan ka yi koyo ko’ina ko’ina ko da babu data."
     }
   },
+  "progress": {
+    "page": {
+      "title": "Ci gaban ka"
+    },
+    "motivation": {
+      "zero": "Har yanzu ba ka fara ba — ka zabi darasinka na farko mu fara tare.",
+      "started": "Madalla, ka fara! Ka ci gaba a hankali — darasi daya bayan daya.",
+      "halfway": "Ka wuce rabin hanya — ka kusa kammalawa, ka kara dagewa.",
+      "complete": "Taya murna! Ka kammala dukkan kwasa-kwasai — ka yi abin alfahari."
+    },
+    "summary": {
+      "title": "Jimillar ci gaba",
+      "complete_label": "an kammala",
+      "lessons_done": "Ka kammala darussa {{completed}} cikin {{total}}"
+    },
+    "streak": {
+      "title": "Streak na koyo",
+      "current": "Streak na yanzu: kwana {{count}}",
+      "longest": "Mafi tsayin streak: kwana {{count}}"
+    },
+    "course": {
+      "lessons": "An kammala {{completed}} / {{total}}"
+    },
+    "status": {
+      "not_started": "Ba a fara ba",
+      "in_progress": "Ana ci gaba",
+      "completed": "An kammala"
+    }
+  },
   "auth": {
     "create_account": "Bude Asusu",
     "sign_in": "Shiga Ciki",

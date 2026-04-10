@@ -92,6 +92,35 @@
       "description": "Soon you will be able to use DigiLearn with zero internet connection. Download your courses once and learn anywhere anytime even without data."
     }
   },
+  "progress": {
+    "page": {
+      "title": "Your Progress"
+    },
+    "motivation": {
+      "zero": "You haven’t started yet — pick your first lesson and let’s begin together.",
+      "started": "Nice start! You’re on your way — keep going one lesson at a time.",
+      "halfway": "You’re more than halfway there — you’re so close to finishing strong.",
+      "complete": "Congratulations! You’ve completed all courses — you should be proud of yourself."
+    },
+    "summary": {
+      "title": "Overall Progress",
+      "complete_label": "complete",
+      "lessons_done": "{{completed}} of {{total}} lessons completed"
+    },
+    "streak": {
+      "title": "Learning Streak",
+      "current": "Current streak: {{count}} day(s)",
+      "longest": "Longest streak: {{count}} day(s)"
+    },
+    "course": {
+      "lessons": "{{completed}} / {{total}} lessons completed"
+    },
+    "status": {
+      "not_started": "Not Started",
+      "in_progress": "In Progress",
+      "completed": "Completed"
+    }
+  },
   "auth": {
     "create_account": "Create Account",
     "sign_in": "Sign In",

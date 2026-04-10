@@ -70,9 +70,8 @@ export default function UpdatesPage() {
                   <div className="flex items-start justify-between gap-3 mb-2">
                     <div className="inline-flex items-center gap-2">
                       <span className="inline-flex items-center bg-light-bg border border-gray-100 rounded-full px-3 py-1 text-xs font-extrabold text-gray-900">
-                        {u.version}
+                        {u.date}
                       </span>
-                      <span className="text-xs font-bold text-gray-400">{u.date}</span>
                     </div>
                   </div>
                   <h2 className="text-base font-extrabold text-gray-900 mb-1">{t(u.titleKey)}</h2>

@@ -1,7 +1,8 @@
 {
   "header": {
     "title": "DigiLearn",
-    "lang_toggle": "EN"
+    "lang_toggle": "EN",
+    "updates": "Sabuntawa"
   },
   "hero": {
     "welcome": "Sannu ku da zuwa DigiLearn!",
@@ -48,8 +49,6 @@
   },
   "nav": {
     "home": "Gida",
-    "search": "Bincika",
-    "updates": "Sabuntawa",
     "progress": "Ci gaba",
     "profile": "Asusu"
   },
@@ -69,36 +68,28 @@
       "whats_new": "Me ya sabo",
       "coming_soon": "Na Tafe (Coming Soon)"
     },
-    "badges": {
-      "coming_soon": "Coming Soon"
+    "expanded_content": {
+      "title": "An kara fadada darussa",
+      "description": "An fadada dukkan kwasa-kwasai 4 sosai, an sa darussan su zurfafa kuma su fi jan hankali. Yanzu kowane mataki yana da cikakken bayani a harshe mai sauki, tare da misalai da kwatanci daga rayuwar yau da kullum a Najeriya, domin ya fi saukin fahimta kuma ya fi dadewa a kwakwalwa."
     },
-    "items": {
-      "u1": {
-        "title": "Maraba da DigiLearn",
-        "description": "Mun kara wasu sabbin abubuwan koyo, kuma mun sa amfani da app ya fi sauki mataki-mataki."
-      },
-      "u2": {
-        "title": "Darussa sun fi kyau, kewayawa ta fi sauki",
-        "description": "Yanzu darussa sun fi tsari da matakai masu bayyana, sannan bibiyar ci gaba ta inganta."
-      },
-      "u3": {
-        "title": "Sabo: Updates System",
-        "description": "Yanzu zaka iya ganin abin da ya sabo a app, da abubuwan da suke zuwa nan gaba."
-      }
+    "updates_tab": {
+      "title": "Updates Tab ta zo",
+      "description": "Yanzu zaka iya bibiyar duk abin da ya sabo da duk abin da yake zuwa DigiLearn a nan a shafin Sabuntawa. Ba zaka kara rasa sabon fasali ko gyara ba."
+    }
+  },
+  "coming_soon": {
+    "badge": "Coming Soon",
+    "languages": {
+      "title": "Karin harsuna na zuwa",
+      "description": "Yoruba da Igbo suna kan hanya. Ba da dadewa ba DigiLearn zata zo da karin harsunan Najeriya domin kada a bar kowa a baya."
     },
-    "coming_soon": {
-      "c1": {
-        "title": "Darussa ba tare da intanet ba",
-        "description": "Zaka iya sauke darussa ka yi koyo ko data ta yi kasa ko network ya yi rauni."
-      },
-      "c2": {
-        "title": "Tambayoyin gwaji (quizzes)",
-        "description": "Gajerun tambayoyi bayan darasi domin su taimaka maka ka tuna muhimman abubuwa."
-      },
-      "c3": {
-        "title": "Takardar shaidar kammalawa",
-        "description": "Idan ka kammala cikakken kwas, zaka samu certificate mai sauki da zai nuna ci gaban ka."
-      }
+    "recordings": {
+      "title": "Recordings na zuwa nan ba da dadewa ba",
+      "description": "Recordings na zuwa DigiLearn domin koyo ya fi sauki kuma ya fi jan hankali. Ka jira, yana tafe."
+    },
+    "offline": {
+      "title": "Cikakken Offline Mode",
+      "description": "Ba da dadewa ba zaka iya amfani da DigiLearn ba tare da intanet kwata-kwata ba. Ka sauke kwasa sau daya, sannan ka yi koyo ko’ina ko’ina ko da babu data."
     }
   },
   "auth": {

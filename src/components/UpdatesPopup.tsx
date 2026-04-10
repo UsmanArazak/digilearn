@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { X } from 'lucide-react';
-import { LATEST_UPDATE_VERSION, UPDATES, UPDATES_LAST_SEEN_STORAGE_KEY } from '@/data/updates';
+import { LATEST_UPDATE_ID, UPDATES, UPDATES_LAST_SEEN_STORAGE_KEY } from '@/data/updates';
 
 export default function UpdatesPopup() {
   const { t } = useTranslation('common');
@@ -12,10 +12,10 @@ export default function UpdatesPopup() {
   const updates = UPDATES;
 
   useEffect(() => {
-    if (!LATEST_UPDATE_VERSION || updates.length === 0) return;
+    if (!LATEST_UPDATE_ID || updates.length === 0) return;
 
     const lastSeen = localStorage.getItem(UPDATES_LAST_SEEN_STORAGE_KEY);
-    if (lastSeen !== LATEST_UPDATE_VERSION) {
+    if (lastSeen !== LATEST_UPDATE_ID) {
       setIsOpen(true);
       setActiveIndex(0);
     }
@@ -23,8 +23,9 @@ export default function UpdatesPopup() {
 
   const closeAndMarkSeen = () => {
     try {
-      if (LATEST_UPDATE_VERSION) {
-        localStorage.setItem(UPDATES_LAST_SEEN_STORAGE_KEY, LATEST_UPDATE_VERSION);
+      if (LATEST_UPDATE_ID) {
+        localStorage.setItem(UPDATES_LAST_SEEN_STORAGE_KEY, LATEST_UPDATE_ID);
+        window.dispatchEvent(new Event('digilearn_update_seen'));
       }
     } finally {
       setIsOpen(false);
@@ -68,7 +69,7 @@ export default function UpdatesPopup() {
           </p>
 
           <div className="inline-flex items-center gap-2 bg-light-bg rounded-full px-3 py-1 border border-gray-100">
-            <span className="text-xs font-extrabold text-gray-900">{current.version}</span>
+            <span className="text-xs font-extrabold text-gray-900">{current.date}</span>
           </div>
         </div>
 

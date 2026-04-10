@@ -1,7 +1,8 @@
 {
   "header": {
     "title": "DigiLearn",
-    "lang_toggle": "HA"
+    "lang_toggle": "HA",
+    "updates": "Updates"
   },
   "hero": {
     "welcome": "Welcome to DigiLearn",
@@ -48,8 +49,6 @@
   },
   "nav": {
     "home": "Home",
-    "search": "Search",
-    "updates": "Updates",
     "progress": "Progress",
     "profile": "Profile"
   },
@@ -69,36 +68,28 @@
       "whats_new": "What is New",
       "coming_soon": "Coming Soon"
     },
-    "badges": {
-      "coming_soon": "Coming Soon"
+    "expanded_content": {
+      "title": "Expanded Course Content",
+      "description": "All 4 courses have been fully expanded with deeper more engaging lessons. Every step now includes detailed explanations written in simple language with real world examples and analogies from everyday Nigerian life so the content is easier to understand and remember."
     },
-    "items": {
-      "u1": {
-        "title": "Welcome to DigiLearn",
-        "description": "We’ve added new learning content and a smoother experience to help you learn step by step."
-      },
-      "u2": {
-        "title": "Better lessons and navigation",
-        "description": "Lessons are now easier to follow with clearer steps and improved progress tracking."
-      },
-      "u3": {
-        "title": "New: Updates System",
-        "description": "You can now see what’s new in the app and what features are coming soon."
-      }
+    "updates_tab": {
+      "title": "Updates Tab is Here",
+      "description": "You can now track everything that is new and everything that is coming to DigiLearn right here in the Updates section. Never miss a new feature or improvement again."
+    }
+  },
+  "coming_soon": {
+    "badge": "Coming Soon",
+    "languages": {
+      "title": "More Languages Coming",
+      "description": "Yoruba and Igbo support are on the way. DigiLearn will soon be available in even more Nigerian languages so no one gets left behind."
     },
-    "coming_soon": {
-      "c1": {
-        "title": "Offline lessons",
-        "description": "Download lessons and learn even when your data is low or the network is weak."
-      },
-      "c2": {
-        "title": "Practice quizzes",
-        "description": "Short quizzes after lessons to help you remember the most important points."
-      },
-      "c3": {
-        "title": "Certificates",
-        "description": "Earn a simple certificate after completing a full course to show your progress."
-      }
+    "recordings": {
+      "title": "Recordings Coming Soon",
+      "description": "Recordings are coming to DigiLearn to make learning even easier and more engaging. Stay tuned."
+    },
+    "offline": {
+      "title": "Full Offline Mode",
+      "description": "Soon you will be able to use DigiLearn with zero internet connection. Download your courses once and learn anywhere anytime even without data."
     }
   },
   "auth": {

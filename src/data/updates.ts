@@ -1,6 +1,5 @@
 export interface UpdateItem {
   id: string;
-  version: string;
   date: string;
   titleKey: string;
   descriptionKey: string;
@@ -17,47 +16,38 @@ export const UPDATES_LAST_SEEN_STORAGE_KEY = 'digilearn_last_seen_update';
 
 export const UPDATES: UpdateItem[] = [
   {
-    id: 'u3',
-    version: 'v1.2',
-    date: '2026-04-10',
-    titleKey: 'updates.items.u3.title',
-    descriptionKey: 'updates.items.u3.description',
+    id: 'expanded_content',
+    date: 'April 2026',
+    titleKey: 'updates.expanded_content.title',
+    descriptionKey: 'updates.expanded_content.description',
   },
   {
-    id: 'u2',
-    version: 'v1.1',
-    date: '2026-03-20',
-    titleKey: 'updates.items.u2.title',
-    descriptionKey: 'updates.items.u2.description',
-  },
-  {
-    id: 'u1',
-    version: 'v1.0',
-    date: '2026-03-01',
-    titleKey: 'updates.items.u1.title',
-    descriptionKey: 'updates.items.u1.description',
+    id: 'updates_tab',
+    date: 'April 2026',
+    titleKey: 'updates.updates_tab.title',
+    descriptionKey: 'updates.updates_tab.description',
   },
 ];
 
 export const COMING_SOON: ComingSoonItem[] = [
   {
-    id: 'c1',
-    titleKey: 'updates.coming_soon.c1.title',
-    descriptionKey: 'updates.coming_soon.c1.description',
-    badgeKey: 'updates.badges.coming_soon',
+    id: 'languages',
+    titleKey: 'coming_soon.languages.title',
+    descriptionKey: 'coming_soon.languages.description',
+    badgeKey: 'coming_soon.badge',
   },
   {
-    id: 'c2',
-    titleKey: 'updates.coming_soon.c2.title',
-    descriptionKey: 'updates.coming_soon.c2.description',
-    badgeKey: 'updates.badges.coming_soon',
+    id: 'recordings',
+    titleKey: 'coming_soon.recordings.title',
+    descriptionKey: 'coming_soon.recordings.description',
+    badgeKey: 'coming_soon.badge',
   },
   {
-    id: 'c3',
-    titleKey: 'updates.coming_soon.c3.title',
-    descriptionKey: 'updates.coming_soon.c3.description',
-    badgeKey: 'updates.badges.coming_soon',
+    id: 'offline',
+    titleKey: 'coming_soon.offline.title',
+    descriptionKey: 'coming_soon.offline.description',
+    badgeKey: 'coming_soon.badge',
   },
 ];
 
-export const LATEST_UPDATE_VERSION = UPDATES[0]?.version ?? '';
+export const LATEST_UPDATE_ID = UPDATES[0]?.id ?? '';

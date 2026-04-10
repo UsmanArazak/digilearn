@@ -72,6 +72,10 @@
       "title": "An kara fadada darussa",
       "description": "An fadada dukkan kwasa-kwasai 4 sosai, an sa darussan su zurfafa kuma su fi jan hankali. Yanzu kowane mataki yana da cikakken bayani a harshe mai sauki, tare da misalai da kwatanci daga rayuwar yau da kullum a Najeriya, domin ya fi saukin fahimta kuma ya fi dadewa a kwakwalwa."
     },
+    "progress_tracking": {
+      "title": "Progress Tracking ta zo",
+      "description": "Yanzu zaka iya ganin ci gaban koyonka dalla-dalla. Ka ga nisan da ka yi a duk kwasa-kwasai 4, ka duba streak dinka na kullum, sannan ka samu saƙonnin karfafa gwiwa da suka dace da ci gaban ka. Ka same shi a shafin Progress."
+    },
     "updates_tab": {
       "title": "Updates Tab ta zo",
       "description": "Yanzu zaka iya bibiyar duk abin da ya sabo da duk abin da yake zuwa DigiLearn a nan a shafin Sabuntawa. Ba zaka kara rasa sabon fasali ko gyara ba."

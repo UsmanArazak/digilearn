@@ -16,6 +16,12 @@ export const UPDATES_LAST_SEEN_STORAGE_KEY = 'digilearn_last_seen_update';
 
 export const UPDATES: UpdateItem[] = [
   {
+    id: 'progress_tracking',
+    date: 'April 2026',
+    titleKey: 'updates.progress_tracking.title',
+    descriptionKey: 'updates.progress_tracking.description',
+  },
+  {
     id: 'expanded_content',
     date: 'April 2026',
     titleKey: 'updates.expanded_content.title',
